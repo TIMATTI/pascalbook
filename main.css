@@ -304,7 +304,7 @@ body {background: #567B96;}
 
 @media (max-width: 695.98px) {
     .top-container {
-        width: 480px;
+        width: 460px;
         height: 320px;
         margin: 50%;
         transform: translate(-50.2%, 0%);
@@ -325,7 +325,7 @@ body {background: #567B96;}
         margin-top: 0px;
         margin-left: 45px;
         border-radius: 10px 30px 10px 30px;
-        font-family: 'Comic Sans MS', sans-serif;
+        font-family: 'Comic Sans MS';
         font-size: 39px;
         font-weight: bold;
         background: #fff;
@@ -469,7 +469,7 @@ body {background: #567B96;}
 
 @media (max-width: 695.98px) {
     .cent-container {
-        width: 480px;
+        width: 460px;
         height: 700px;
         margin: 50%;
         transform: translate(-50.2%, 0%);
@@ -608,7 +608,7 @@ body {background: #567B96;}
 
 @media (max-width: 695.98px) {
     .bot-container {
-        width: 480px;
+        width: 460px;
         height: 100px;
         margin: 50%;
         margin-bottom: 5px;
