@@ -5,6 +5,11 @@
 
 body {background: #567B96;}
 
+@font-face {
+        font-family: 'Comic Sans MS';
+        src: url("2006.ttf");
+    }
+
 /*--------------------------top-container----------------------------*/
 
 @media (max-width: 1699.98px) {
