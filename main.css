@@ -6,9 +6,9 @@
 body {background: #567B96;}
 
 @font-face {
-        font-family: 'Comic Sans MS';
-        src: url("2006.ttf");
-    }
+    font-family: 'Comic Sans MS';
+    src: url("2006.ttf");
+}
 
 /*--------------------------top-container----------------------------*/
 
@@ -304,7 +304,7 @@ body {background: #567B96;}
 
 @media (max-width: 695.98px) {
     .top-container {
-        width: 460px;
+        width: 480px;
         height: 320px;
         margin: 50%;
         transform: translate(-50.2%, 0%);
@@ -469,7 +469,7 @@ body {background: #567B96;}
 
 @media (max-width: 695.98px) {
     .cent-container {
-        width: 460px;
+        width: 480px;
         height: 700px;
         margin: 50%;
         transform: translate(-50.2%, 0%);
@@ -608,7 +608,7 @@ body {background: #567B96;}
 
 @media (max-width: 695.98px) {
     .bot-container {
-        width: 460px;
+        width: 480px;
         height: 100px;
         margin: 50%;
         margin-bottom: 5px;
