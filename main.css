@@ -410,16 +410,24 @@ body {background: #567B96;}
         position: fixed;
         left: 15px;
         top: 15px;
+        border-radius: 80px;
+        z-index: 300;
+    }
+
+    .menu {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        left: 15px;
+        top: 15px;
         background: #FFDE5F;
         border-radius: 80px;
         z-index: 200;
     }
 
-    .lower span:hover{cursor: pointer;}
-
-    .lower span,
-    .lower span::before,
-    .lower span::after {
+    .menu span,
+    .menu span::before,
+    .menu span::after {
         position: fixed;
         top: 45px; 
         margin-top: -1px;
@@ -432,24 +440,32 @@ body {background: #567B96;}
         background-color: #000;
     }
 
-    .lower span::before,
-    .lower span::after {
+    .menu span::before,
+    .menu span::after {
         content: '';
         display: block;
         transition: 0.2s;
     }
 
-    .lower span::before {transform: translateY(-7px);}
+    .menu span::before {transform: translateY(-7px);}
 
-    .lower span::after {transform: translateY(7px);}
+    .menu span::after {transform: translateY(7px);}
 
-    #op:checked~.lower span {background-color: #FFDE5F;}
+    #op:checked~.menu span {background-color: #FFDE5F;}
 
-    #op:checked~.lower span:before {
+    .line:checked~.menu span {background-color: #FFDE5F;}
+
+    #op:checked~.menu span:before {
         transform: rotate(-45deg);
         width: 25px;
     }
-    #op:checked~.lower span:after {
+
+    .line:checked~.menu span:before {
+        transform: rotate(-45deg);
+        width: 25px;
+    }
+
+    #op:checked~.menu span:after {
         transform: rotate(45deg);
         width: 25px;
     }
