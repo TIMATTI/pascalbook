@@ -943,8 +943,8 @@ body {background: #567B96;}
 
     .text {
         bottom: 30%;
-        margin-top: 0%;
-        top: 280px;
+        margin-top: 61%;
+        /*top: 280px;*/
         font-size: 17px;
     }
 }
