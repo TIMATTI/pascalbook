@@ -461,7 +461,7 @@ body {background: #567B96;}
     .menu-mobile span::after {transform: translateY(9px);}
 
     #op:checked~.menu-mobile span {
-        background: transparent;
+        height: 0%;
         transition: 0.1s;
     }
 
