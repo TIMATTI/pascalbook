@@ -490,7 +490,10 @@ body {background: #567B96;}
 }
 
 @media (max-width: 695.98px) {
-    .cent-container {width: 480px;}
+    .cent-container {
+        width: 480px;
+        margin-top: -40px;
+    }
   
     .s1 {font-size: 30px;}
 }
