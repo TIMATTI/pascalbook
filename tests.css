@@ -396,11 +396,7 @@ body {background: #567B96;}
         border-radius: 20px;
     }
 
-    .content {
-        padding-top: 30px;
-        margin: 5%;
-        padding-bottom: 30px;
-    }
+    .content {padding: 30px 5% 30px 5%;}
   
     .s1 {
         font-size: 30px;
@@ -479,22 +475,21 @@ body {background: #567B96;}
 @media (max-width: 10099.98px) {
     .bot-container {
         width: 980px;
-        height: 100px;
         margin: 50%;
         transform: translate(-50%, 10%);
         background: #0E1821;
         border-radius: 20px;
         text-align: center;
     }
+
+    .content2 {padding: 20px 2% 20px 2%;}
   
     .cop {
         font-family: 'Arial', sans-serif;
         font-size: 15px;
         color: #8293A1;
-        padding-top: 20px;
-    }
-  
-  
+    } 
+
     .i1, .i2 {
         width: 30px;
         height: 30px;
@@ -518,34 +513,13 @@ body {background: #567B96;}
 }
 
 @media (max-width: 787.98px) {
-    .bot-container {
-        width: 580px;
-        height: 120px;
-    }
-  
-    .cop {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
+    .bot-container {width: 580px;}
 }
 
 @media (max-width: 695.98px) {
-    .bot-container {
-        width: 480px;
-        height: 120px;
-    }
-  
-    .network {
-        margin-top: 30px;
-        margin-left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
+    .bot-container {width: 480px;}
 }
 
 @media (max-width: 505.98px) {
-    .bot-container {
-        width: 100%;
-        height: 120px;
-    }
+    .bot-container {width: 100%;}
 }
