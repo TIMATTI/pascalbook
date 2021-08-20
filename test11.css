@@ -416,7 +416,11 @@ body {background: #567B96;}
         font-family: "Arial";
     }
     
-    blockquote {padding-left: 5%;}
+    blockquote {
+        padding-left: 5%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
     
     p {
         text-align: center;
@@ -494,7 +498,10 @@ body {background: #567B96;}
     .left,
     .right {font-size: 18px;}
 
-    .right {float: right;}
+    .right {
+        float: right;
+        padding-top: 2px;
+    }
 }
 
 @media (max-width: 1699.98px) {
