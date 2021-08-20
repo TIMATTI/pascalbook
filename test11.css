@@ -420,6 +420,7 @@ body {background: #567B96;}
         padding-left: 5%;
         padding-top: 10px;
         padding-bottom: 5px;
+        font-size: 17px;
     }
     
     p {
@@ -467,6 +468,10 @@ body {background: #567B96;}
 
     form {font-size: 16px;}
 
+    blockquote {
+        padding-left: 7%;
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 505.98px) {
@@ -498,9 +503,11 @@ body {background: #567B96;}
     .left,
     .right {font-size: 18px;}
 
+    .left {display: none;} 
+
     .right {
-        float: right;
-        padding-top: 2px;
+        /*float: left;*/
+        padding-top: 0.2px;
     }
 }
 
@@ -535,6 +542,8 @@ body {background: #567B96;}
 @media (max-width: 399.98px) {
     .left,
     .right {font-size: 14px;}
+
+    .right {padding-top: 2px;}
 }
 
 /*--------------------------bot-container----------------------------*/
