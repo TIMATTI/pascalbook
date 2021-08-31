@@ -122,6 +122,10 @@
     }
 }
 
+@media (max-width: 449.98px) {
+    .imag1 {width: 100%;}
+}
+
 @media (max-width: 399.98px) {
     form,
     blockquote,
