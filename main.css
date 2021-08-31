@@ -496,11 +496,14 @@ body {background: #567B96;}
     }
 
     .content3 {padding: 20px 2% 20px 2%;}
+
+    p {margin-bottom: 0;}
   
     .cop {
         font-family: 'Arial', sans-serif;
         font-size: 15px;
         color: #8293A1;
+        padding-bottom: 10px;
     } 
 
     .i1, .i2 {

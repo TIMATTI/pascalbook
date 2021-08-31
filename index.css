@@ -118,3 +118,9 @@
   
     .text {font-size: 14px;}
 }
+
+/*--------------------------bot-container----------------------------*/
+
+@media (max-width: 10099.98px) {
+    .content2 {padding: 20px 2% 20px 2%;}
+}
