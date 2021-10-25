@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/test/test15.css">
+    <title>Тест: Вычисление логических выражений | pascalbook</title>
+    <script>
+        function sbros() {x=document.forms[0].elements[7].value;for (i=1; i<=x; i++) {document.forms[i].reset();}}function step3() {var i=0;var j=0;var schet=0;var jm=document.forms[0].elements[7].value;var im=document.forms[0].elements[8].value;for (j=1; j<=jm; j++){for (i=0; i<im; i++){if (document.forms[j].R1[i].checked==true){schet++;}}};if (schet<jm){alert("Надо ответить на ВСЕ вопросы!");return;}eo=document.forms[0].elements[9].value;e=new Array();e=eo.split("/");sr=new Array(1,1,1,1,1,1,1,1,1,1,0);o=new Array();var r=0;var tp=3;var kr=0;var test=2;var ll=10;var osh=0;var text="";for (j=1; j<=jm; j++){for (i=0; i<im; i++){if (document.forms[j].R1[i].checked==true){o[j-1]=i*0.7000000000000001+3;}}};for (j=0; j<jm; j++){if (o[j]==e[j+tp]){r=r+1*sr[j];}else{osh++;}};if (osh!=0){text="Ошибочных ответов - "+osh+"."}if (test==1){if (kr==0){sbros(); alert("Количество правильных ответов: "+r+" из "+jm+" возможных ("+Math.round(r*100/jm)+"%).");}else{sbros(); alert("Набрано баллов: "+(r*100)+" из "+(ll*100)+" возможных ("+Math.round(r*100/ll)+"%).");}}else{if (kr==0){alert("Количество правильных ответов: "+r+" из "+jm+" возможных ("+Math.round(r*100/jm)+"%).");}else{alert("Набрано баллов: "+(r*100)+" из "+(ll*100)+" возможных ("+Math.round(r*100/ll)+"%).\n"+text)}}}
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="../index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="../theme/theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="#">Творческие работы</a></li>
+				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="../index.html" class="shine-button b1">Главная</a>
+        <a href="../theme/theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="tests.html" class="shine-button b3">Тесты</a>
+        <a href="#" class="shine-button b4">Творческие работы</a>
+        <a href="#" class="shine-button b5">Олимпиадные задания</a>
+        <a href="#" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">Pascal ABC</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Тест: Вычисление логических выражений</span>
+            <div class="line"></div><br>
+            <div class="question">
+                <form>
+                    <input type="hidden" value="2">
+                    <input type="hidden" value="Проверочная">
+                    <input type="hidden" value="Информатика">
+                    <input type="hidden" value="0">
+                    <input type="hidden" value="Вычисление логических выражений">
+                    <input type="hidden" value="1">
+                    <input type="hidden" value="0">
+                    <input type="hidden" value="10">
+                    <input type="hidden" value="2">
+                    <input type="hidden" value="15.2/3/3/3/3.7/3.7/3.7/3/3/3.7/3/3/3.7/3.7/3.7/3.7/">
+                </form>
+              
+                <form>
+                  <b>&nbsp;1.</b> Логическими являются такие данные и выражения...
+                  <blockquote>
+                      <input type="radio" name="R1"><b> которые могут принимать только два значения – True и False</b><br>
+                      <input type="radio" name="R1"><b> которые могут принимать только два значения – Yes и No</b><br>
+                  </blockquote>
+                </form>
+              
+                <form>
+                  <b>&nbsp;2.</b> Переменные логического типа описываются с использованием стандартного типа
+                  <blockquote>
+                      <input type="radio" name="R1"><b> bool</b><br>
+                      <input type="radio" name="R1"><b> boolean</b><br>
+                  </blockquote>
+                </form>
+              
+                <form>
+                  <b>&nbsp;3.</b> Размер выделяемой памяти под логическое данное
+                  <blockquote>
+                      <input type="radio" name="R1"><b> 5 байт</b><br>
+                      <input type="radio" name="R1"><b> 1 байт</b><br>
+                  </blockquote>
+                </form>
+              
+                <form>
+                  <b>&nbsp;4.</b> Ответьте, каков будет результат выполнения программы:
+                  <blockquote>
+                    <div class="code">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>program </b><w>zadacha7_1;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><b>var </b><w>A, B, C, rezA: boolean;</w></td>
+                              </tr>
+                                <tr>
+                                    <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>begin</b></td>
+                                </tr>
+                                <tr>
+                                  <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;A:=true;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><w>&nbsp;&nbsp;&nbsp;&nbsp;B:=false;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;C:=false;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;rezA:=(A</w><b> and </b><w>C)</w><b> or </b><w>B;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><w>&nbsp;&nbsp;&nbsp;&nbsp;writeln(<g>'rezA= '</g>, rezA);</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                              <td><b>end</b><w>.</w></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div><br>
+                      <input type="radio" name="R1"><b> rezA=True</b><br>
+                      <input type="radio" name="R1"><b> rezA=False</b><br>
+                  </blockquote>
+                </form>
+              
+                <form>
+                  <b>&nbsp;5.</b> Ответьте, каков будет результат выполнения программы:
+                  <blockquote>
+                    <div class="code">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>program </b><w>zadacha7_2;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><b>var </b><w>A, B, C, rezA: boolean;</w></td>
+                              </tr>
+                                <tr>
+                                    <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>begin</b></td>
+                                </tr>
+                                <tr>
+                                  <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;A:=true;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><w>&nbsp;&nbsp;&nbsp;&nbsp;B:=false;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;C:=false;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;rezA:=(A</w><b> or </b><w>B</w><b> and not </b><w>C)</w><b> and </b><w>C;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><w>&nbsp;&nbsp;&nbsp;&nbsp;writeln(<g>'rezA= '</g>, rezA);</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                              <td><b>end</b><w>.</w></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div><br>
+                        <input type="radio" name="R1"><b> rezA=True</b><br>
+                        <input type="radio" name="R1"><b> rezA=False</b><br>
+                  </blockquote>
+                </form>
+              
+                <form>
+                  <b>&nbsp;6.</b> Ответьте, каков будет результат выполнения программы:
+                  <blockquote>
+                    <div class="code">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>program </b><w>zadacha7_1;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><b>var </b><w>A, B, C, rezA: boolean;</w></td>
+                              </tr>
+                                <tr>
+                                    <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>begin</b></td>
+                                </tr>
+                                <tr>
+                                  <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;A:=true;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><w>&nbsp;&nbsp;&nbsp;&nbsp;B:=false;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;C:=false;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;rezA:=(A</w><b> and </b><w>C)</w><b> or </b><w>B;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><w>&nbsp;&nbsp;&nbsp;&nbsp;writeln(<g>'rezA= '</g>, rezA);</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                              <td><b>end</b><w>.</w></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div><br>
+                        <input type="radio" name="R1"><b> rezA=False</b><br>
+                        <input type="radio" name="R1"><b> rezA=True</b><br>
+                  </blockquote>
+                </form>
+              
+                <form>
+                  <b>&nbsp;7.</b> Ответьте, каков будет результат выполнения программы: 
+                  <blockquote>
+                    <div class="code">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>program </b><w>zadacha7_2;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><b>var </b><w>A, B, C, rezA: boolean;</w></td>
+                              </tr>
+                                <tr>
+                                    <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>begin</b></td>
+                                </tr>
+                                <tr>
+                                  <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;A:=true;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><w>&nbsp;&nbsp;&nbsp;&nbsp;B:=false;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;C:=true;</w></td>
+                                </tr>
+                                <tr>
+                                  <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                                  <td><w>&nbsp;&nbsp;&nbsp;&nbsp;rezA:=(A</w><b> and </b><w>C)</w><b> or </b><w>B;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><w>&nbsp;&nbsp;&nbsp;&nbsp;writeln(<g>'rezA= '</g>, rezA);</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                              <td><b>end</b><w>.</w></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div><br>
+                        <input type="radio" name="R1"><b> rezA=False</b><br>
+                        <input type="radio" name="R1"><b> rezA=True</b><br>
+                  </blockquote>
+                </form>
+
+                <form>
+                    <b>&nbsp;8.</b> Вычислить значение логического выражения, если Х=Ложь, Y=Ложь, Z=Истина: <br>not Х and У or Z. 
+                    <blockquote>
+                        <input type="radio" name="R1"><b> Истина</b><br>
+                        <input type="radio" name="R1"><b> Ложь</b><br>
+                    </blockquote>
+                </form>
+
+                <form>
+                    <b>&nbsp;9.</b> Вычислить значение логического выражения, если Х=Ложь, Y= Ложь, Z=Истина: <br>Х and (not(У or Z)).
+                    <blockquote>
+                        <input type="radio" name="R1"><b> Ложь</b><br>
+                        <input type="radio" name="R1"><b> Истина</b><br>
+                    </blockquote>
+                </form>
+                
+                <form>
+                    <b>&nbsp;10.</b> Вычислить значение логического выражения, если Х=Ложь, Y=Истина, Z=Ложь: <br>Х and not (Z or У) or not Z.
+                    <blockquote>
+                        <input type="radio" name="R1"><b> Ложь</b><br>
+                        <input type="radio" name="R1"><b> Истина</b><br>
+                    </blockquote>
+                </form><br>
+            
+                <form>
+                  <p>
+                    <input type="button" class="but" value=" Проверить " onclick="step3()">
+                    <input type="button" class="but" value=" Очистить " onclick="sbros()">
+                  </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="test19.html" style="color: #42C0C7;">Предыдущий тест</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="test21.html" style="color: #42C0C7;">Следующий тест</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2021 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
