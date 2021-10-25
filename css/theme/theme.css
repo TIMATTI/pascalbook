@@ -1,0 +1,125 @@
+/*--------------------------top-container----------------------------*/
+
+@media (max-width: 10099.98px) {
+    .b2 {background: #FFDE5F;}
+}
+
+@media (max-width: 695.98px) {
+    .overlay ul li .i2 {color: #FFDE5F;}
+}
+
+/*--------------------------cent-container----------------------------*/
+
+@media (max-width: 10099.98px) {
+    .content {padding: 30px 0 20px 0;}
+  
+    .s1 {
+        margin-left: 3%;
+        font-size: 30px;
+        font-family: 'Arial', sans-serif;
+        color: #e0d434;
+    }
+  
+    .line {
+        margin-left: 3%;
+        width: 94%;
+        height: 3px;
+        background: #567B96;
+    }
+
+    .bloks {padding: 5px 0 0 13px;}
+
+    #d {
+        display: inline-table;
+        text-align: center;
+        padding-top: 5%;
+        margin: 0 0 5px 0;
+        width: 236px;
+        height: 250px;
+        border-radius: 15px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+    }
+
+    #d{background: rgb(240, 240, 255);}/*rgb(6, 64, 100);*/
+
+    #d:hover {background: rgb(230, 230, 245);}/*rgba(6, 60, 95);*/
+
+    p {
+        font-family: 'Comic Sans MS', sans-serif;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .bloks {padding: 5px 0 0 14px;}
+  
+    #d {
+        padding-top: 4%;
+        width: 210px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .bloks {padding: 5px 0 0 25.7px;}
+  
+    #d {
+        padding-top: 7%;
+        width: 240px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .bloks {padding: 5px 0 0 13px;}
+  
+    #d {
+        padding-top: 6%;
+        width: 215px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 787.98px) {
+    #d {
+        padding-top: 9%;
+        width: 275px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 695.98px) {
+    .s1 {font-size: 25px;}
+
+    .bloks {padding: 5px 0 0 18px;}
+
+    #d {
+        padding-top: 10%;
+        width: 220px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 505.98px) {
+    .bloks {
+        padding-left: 0px;
+    }
+
+    #d {
+        padding-top: 10%;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 399.98px) {
+    #d {padding-top: 15%;}
+}
+
+/*--------------------------bot-container----------------------------*/
+
+@media (max-width: 10099.98px) {
+    .content2 {padding: 20px 2% 20px 2%;}
+}
