@@ -76,20 +76,6 @@
         background-color: #fff;
     }
 
-    .code {
-        padding: 10px;
-        background: #000;
-    }
-    
-    td {
-        font-size: 18px;
-        color: #0011ff;
-    }
-    
-    g {color: #0085df}
-    
-    w {color: #fff}
-
     .image,
     .imag {
         background: #fff;

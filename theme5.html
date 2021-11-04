@@ -34,7 +34,7 @@
     <div class="top-container mb-4">
         <a href="index.html" class="shine-button b1">Главная</a>
         <a href="theme.html" class="shine-button b2">Темы уроков</a>
-        <a href="tests.html" class="shine-button b3">Тесты</a>
+        <a href="test/tests.html" class="shine-button b3">Тесты</a>
         <a href="#" class="shine-button b4">Творческие работы</a>
         <a href="#" class="shine-button b5">Олимпиадные задания</a>
         <a href="#" class="shine-button b6">Занятия</a>
@@ -108,35 +108,39 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;Модуль <b>GraphABC</b> содержит константы и функции для работы с цветами. Тип <b>ColorType</b>, описывающий цвет, определен следующим образом:<br><br>
 
                 <b style="color: #3D9BE8;">type</b> <b>ColorType</b>=integer; - стандартные цвета задаются символическими константами:<br>
-                <div class="bl">
-                    <span class="bl1">
-                        <b>clBlack</b> – черный<br>
-                        <b>clPurple</b> – фиолетовый<br>
-                        <b>clWhite</b> – белый<br>
-                        <b>clMaroon</b> – темно-красный<br>
-                        <b>clRed</b> – красный<br>
-                        <b>clNavy</b> – темно-синий<br>
-                        <b>clGreen</b> – зеленый<br>
-                        <b>clBrown</b> – коричневый<br>
-                        <b>clBlue</b> – синий<br>
-                        <b>clSkyBlue</b> – голубой<br>
-                        <b>clYellow</b> – желтый<br>
-                        <b>clCream</b> – кремовый<br>
-                    </span>
-                    <span class="bl2">
-                        <b>clAqua</b> – бирюзовый<br>
-                        <b>clOlive</b> – оливковый<br>
-                        <b>clFuchsia</b> – сиреневый<br>
-                        <b>clTeal</b> – сине-зеленый<br>
-                        <b>clGray</b> – темно-серый<br>
-                        <b>clLime</b> – ярко-зеленый<br>
-                        <b>clMoneyGreen</b> – цвет зеленых денег<br>
-                        <b>clLtGray</b> – светло-серый<br>
-                        <b>clDkGray</b> – темно-серый<br>
-                        <b>clMedGray</b> – серый<br>
-                        <b>clSilver</b> – серебряный<br>
-                    </span>
-                </div><br><br>
+                <table class="bl">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <b>clBlack</b> – черный<br>
+                                <b>clPurple</b> – фиолетовый<br>
+                                <b>clWhite</b> – белый<br>
+                                <b>clMaroon</b> – темно-красный<br>
+                                <b>clRed</b> – красный<br>
+                                <b>clNavy</b> – темно-синий<br>
+                                <b>clGreen</b> – зеленый<br>
+                                <b>clBrown</b> – коричневый<br>
+                                <b>clBlue</b> – синий<br>
+                                <b>clSkyBlue</b> – голубой<br>
+                                <b>clYellow</b> – желтый<br>
+                                <b>clCream</b> – кремовый<br>
+                            </td>
+                            <td class="bll">
+                                <b>clAqua</b> – бирюзовый<br>
+                                <b>clOlive</b> – оливковый<br>
+                                <b>clFuchsia</b> – сиреневый<br>
+                                <b>clTeal</b> – сине-зеленый<br>
+                                <b>clGray</b> – темно-серый<br>
+                                <b>clLime</b> – ярко-зеленый<br>
+                                <b>clMoneyGreen</b> – цвет зеленых денег<br>
+                                <b>clLtGray</b> – светло-серый<br>
+                                <b>clDkGray</b> – темно-серый<br>
+                                <b>clMedGray</b> – серый<br>
+                                <b>clSilver</b> – серебряный<br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
 
                 <span class="s3">Для работы с цветами</span> используются следующие функции(процедуры):<br><br>
 
@@ -144,15 +148,9 @@
 
                 <b style="color: #3D9BE8;">function</b> <b>RGB</b>(r,g,b: integer): ColorType; - возвращает целое значение, являющееся кодом цвета, который содержит красную, зеленую и синюю составляющие с интенсивностями r, g и b соответственно (r, g и b – целые в диапазоне от 0 до 255, причем, 0 соответствует минимальной интенсивности, 255 – максимальной).<br><br>
 
-​
-
                 <b style="color: #3D9BE8;">function</b> <b>GetRed</b>(color: ColorType): integer; - выделяет красную составляющую из цвета color (целое в диапазоне от 0 до 255).<br><br>
 
-​
-
                 <b style="color: #3D9BE8;">function</b> <b>GetGreen</b>(color: ColorType): integer; - выделяет зеленую составляющую из цвета color (целое в диапазоне от 0 до 255).<br><br>
-
-​
 
                 <b style="color: #3D9BE8;">function</b> <b>GetBlue</b>(color: ColorType): integer; - выделяет синюю составляющую из цвета color (целое в диапазоне от 0 до 255).<br><br>
             </span><br><br>
@@ -369,9 +367,6 @@
             <span class="s3" id="7">Задание(определение) режимов вывода</span>
             <div class="line l1"></div><br>
             <span class="s2">
-                <!--<b style="color: #3D9BE8;">function</b> <b></b><br><br>
-                    <b style="color: #3D9BE8;">procedure</b> <b></b><br><br>-->
-
                 <b style="color: #3D9BE8;">procedure</b> <b>SetDrawingSurface</b>(n: integer); - устанавливает в качестве канвы для рисования рисунок с описателем n. В результате весь графический вывод осуществляется не на экран, а на рисунок; настройки кисти, пера и шрифта также осуществляются для рисунка.<br><br>
 
                 <b style="color: #3D9BE8;">procedure</b> <b>SetDrawingSurface</b>(p: Picture); - устанавливает в качестве канвы для рисования рисунок с описателем n. В результате весь графический вывод осуществляется не на экран, а на рисунок; настройки кисти, пера и шрифта также осуществляются для рисунка.<br><br>

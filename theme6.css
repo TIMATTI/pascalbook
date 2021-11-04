@@ -37,22 +37,6 @@
         width: 400px;
         height: 230px;
     }
-
-    .code {
-        padding: 10px;
-        background: #000;
-    }
-
-    td {
-        font-size: 18px;
-        color: #0011ff;
-    }
-
-    g {color: #0085df}
-
-    w {color: #fff}
-
-    c {color: #42d300}
 }
 
 @media (max-width: 787.98px) {

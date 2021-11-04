@@ -29,21 +29,22 @@
 
     .l1 {height: 2px;}
 
-    .s2 {
+    .s2,
+    td {
         font-size: 18px;
         font-family: 'Arial';
         color: #fff;
     }
+
+    .bl {width: 100%;}
+
+    .bll {float: right;}
 
     .s3 {
         padding-left: 15px;
         font-size: 20px;
         color: #e0d434;
     }
-
-    .bl {display: inline-flex;}
-
-    .bl1 {padding: 0 5% 0 5%;}
 
     .tabl1 {
         width: 500px;
@@ -82,7 +83,8 @@
 @media (max-width: 695.98px) {
     .s1 {font-size: 25px;}
 
-    .s2 {font-size: 16px;}
+    .s2,
+    td {font-size: 16px;}
 
     .tabl1 {
         width: 100%;
@@ -96,11 +98,10 @@
 }
 
 @media (max-width: 399.98px) {
-    .s2 {font-size: 14px;}
+    .s2,
+    td {font-size: 14px;}
 
     .im1 {width: 100%;}
-
-    .bl1 {padding: 0 5% 0 0 ;}
 
     .tabl1,
     .tabl2 {font-size: 12px;}

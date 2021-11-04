@@ -83,12 +83,10 @@
 }
 
 @media (max-width: 787.98px) {
-    .bloks {padding: 5px 0 0 47px;}
-  
     #d {
         padding-top: 9%;
-        width: 240px;
-        height: 240px;
+        width: 275px;
+        height: 250px;
     }
 }
 

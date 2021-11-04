@@ -384,6 +384,22 @@ body {background: #567B96;}
         background: #0E1821;
         border-radius: 20px;
     }
+
+    .code {
+        padding: 10px;
+        background: #000;
+    }
+
+    td {
+        font-size: 18px;
+        color: #2732c0;
+    }
+
+    g {color: #087ac5}
+
+    w {color: #fff}
+
+    c {color: #42d300}
 }
 
 @media (max-width: 1699.98px) {
@@ -498,10 +514,10 @@ body {background: #567B96;}
     .content3 {padding: 20px 2% 20px 2%;}
 
     p {margin-bottom: 0;}
-  
+
     .cop {
         font-family: 'Arial', sans-serif;
-        font-size: 15px;
+        font-size: 16px;
         color: #8293A1;
         padding-bottom: 10px;
     } 
@@ -510,6 +526,7 @@ body {background: #567B96;}
         width: 30px;
         height: 30px;
         margin: 0px;
+        border-radius: 5px;
     }
 }
 
