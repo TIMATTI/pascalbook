@@ -484,7 +484,8 @@ body {background: #567B96;}
 @media (max-width: 695.98px) {
     .cent-cont {width: 480px;}
 
-    .left {font-size: 15px;}
+    .left,
+    .right {font-size: 17px;}
 }
 
 @media (max-width: 505.98px) {
@@ -492,7 +493,7 @@ body {background: #567B96;}
 }
 
 @media (max-width: 399.98px) {
-    .left {font-size: 13px;}
+    .left {font-size: 14px;}
     .right {
         padding-top: 2px;
         font-size: 14px;

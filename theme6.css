@@ -27,16 +27,26 @@
         background: #567B96;
     }
 
+    .l1 {height: 2px;}
+
     .s2 {
         font-size: 18px;
         font-family: 'Arial';
         color: #fff;
     }
 
+    .s3 {
+        padding-left: 15px;
+        font-size: 20px;
+        color: #e0d434;
+    }
+
     .image {
         width: 400px;
         height: 230px;
     }
+
+    blockquote {margin-left: 5%;}
 }
 
 @media (max-width: 787.98px) {

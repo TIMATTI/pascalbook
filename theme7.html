@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="theme6.css">
+    <title>Тема: Алгоритмы ветвления | pascalbook</title>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="#">Творческие работы</a></li>
+				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="index.html" class="shine-button b1">Главная</a>
+        <a href="theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="tests.html" class="shine-button b3">Тесты</a>
+        <a href="#" class="shine-button b4">Творческие работы</a>
+        <a href="#" class="shine-button b5">Олимпиадные задания</a>
+        <a href="#" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">Pascal ABC</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Тема: Алгоритмы ветвления</span><br>
+            <div class="line"></div><br>
+            <span class="s2">
+                &nbsp;&nbsp;&nbsp;&nbsp;В языке Паскаль используется <b style="color: #FFDE5F;">два оператора</b> для реализации <b style="color: #FFDE5F;">условных переходов</b> - <b>IF</b> и <b>CASE</b>, а также оператор безусловного перехода <b>GOTO</b>(этот оператор не рассматривается). Они позволяют нарушить последовательный порядок выполнения инструкций программы.<br><br><br><br>
+                
+                <span class="s3">Оператор условного перехода</span>
+                <div class="line l1"></div><br>
+                <b style="color: #FFDE5F;">Оператор условного перехода</b> в <b>PascalABC</b> имеет вид:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>if </b><w style="font-style: italic">условие</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>then </b><w style="font-style: italic">оператор 1</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>else </b><w style="font-style: italic">оператор 2;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                <n style="font-style: italic;">Условие</n> - это логическое выражение, в зависимости от которого выбирается одна из двух альтернативных ветвей алгоритма.<br> 
+                <b>Если</b> значение условия истинно (<b>TRUE</b>), то будет выполняться <n style="font-style: italic;">оператор 1</n>, записанный после ключевого слова <b style="color: #3D9BE8;">then</b>.<br>
+                <b>В противном случае</b> будет выполнен <n style="font-style: italic;">оператор 2</n>, следующий за словом <b style="color: #3D9BE8;">else</b>, при этом <n style="font-style: italic;">оператор 1</n> пропускается.<br>
+                После выполнения указанных операторов программа переходит к выполеннию команды, стоящей непосредственно после оператора <b style="color: #3D9BE8;">if</b>.<br><br>
+
+                Перед ключевым словом <b style="color: #3D9BE8;">else</b> точка с запятой <b>НЕ СТАВИТСЯ</b>!<br>
+
+                <b style="color: #3D9BE8;">else</b> - часть в операторе <b style="color: #3D9BE8;">if</b> может отсутствовать:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>if </b><w style="font-style: italic">условие</w><b> then </b><w style="font-style: italic">оператор 1</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                Тогда в случае невыполнения логического условия управление сразу передается оператору, стоящему в программе после конструкции <b style="color: #3D9BE8;">if</b>.<br><br>
+
+                Синтаксис языка допускает запись только одного оператора после ключевых слов <b style="color: #3D9BE8;">then</b> и <b style="color: #3D9BE8;">else</b>, поэтому группу инструкций обязательно надо объединять в составной оператор(окаймлять операторными скобками <b style="color: #3D9BE8;">begin</b>...<b style="color: #3D9BE8;">end</b>). Иначе возникает(чаще всего) логическая ошибка программы, когда компилятор языка ошибок не выдает, но программа тем не менее работает неправильно.<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>if </b><w>(x>y)</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>then </b><w>writeln(<g>'true'</g>)</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>else </b><w>writeln(<g>'false'</g>);</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>if </b><w>(n<=10)</w><b> then </b><w>max+=n;</w>&nbsp;&nbsp;&nbsp;<c>//max:=max+n;</c></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>if </b><w>(x=0)</w><b> then begin</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w>min:=x;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w>n+=1;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>end</b><w>;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br><br><br>
+
+                <span class="s3">Оператор выбора</span>
+                <div class="line l1"></div><br>
+                Часто возникают ситуации, когда приходится осуществлять выбор одного из нескольких альтернативных путей выполнения программы. Несмотря на то, что такой выбор можно организовать с помощью оператора <b style="color: #3D9BE8;">if</b>...<b style="color: #3D9BE8;">then</b>, удобнее воспользоваться специальным оператором выбора. Его формат:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>case </b><w style="font-style: italic">выражение</w><b> of</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(1): оператор;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(2): оператор;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">...</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(n): оператор;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>end</b><w>;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                Или с оператором <b style="color: #3D9BE8;">else</b>:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>case </b><w style="font-style: italic">выражение</w><b> of</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(1): оператор;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(2): оператор;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">...</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(n): оператор;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>else</b><w> оператор;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>end</b><w>;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                <n style="font-style: italic">Выражение</n>, которое записывается после ключевого слова <b style="color: #3D9BE8;">case</b>, называется селектором, оно может быть любого перечисляемого типа.<br><br>
+                <n style="font-style: italic">Вариант</n> состоит из одной или большего количества констант или диапазонов, разделенных запятыми.<br><br>
+                
+                Они должны принадлежать к тому же типу, что и селектор, причем недопустимо более одного упоминания вариантав записи инструкции <b style="color: #3D9BE8;">case</b>. Из перечисленного множества операторов будет выбран только тот, перед которым записан вариант, совпадающий со значением селектора. Если такого варианта нет, выполняется оператор, следующий за словом <b style="color: #3D9BE8;">else</b>(если он есть).<br><br>
+
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>case </b><w>s</w><b> of</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w>'A'..'Z, 'a'..'z': writeln(<g>'Строка'</g>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w>'0'..'9': writeln(<g>'Число'</g>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w>'+', '-', '*', '/': writeln(<g>'Знак'</g>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>else</b><w> writeln(<g>'Спец. символ'</g>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>end</b><w>;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="theme6.html" style="color: #42C0C7;">Предыдущая тема</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="erorr.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2021 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
