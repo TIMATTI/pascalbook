@@ -54,23 +54,23 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;Здесь большой желтый квадрат изображает Робота, маленький желтый квадрат в левом верхнем углу клетки - конечное положение Робота, черными точками помечены клетки, которые надо закрасить.<br><br>
 
                 <b style="color: #FFDE5F;">Команды</b> исполнителя <b>Робот</b> содержатся в модуле Robot:
-                <ul>
-                    <li style="list-style: decimal"><b>Right</b> – перемещает Робота вправо;</li>
-                    <li style="list-style: decimal"><b>Left</b> – перемещает Робота влево;</li>
-                    <li style="list-style: decimal"><b>Up</b> – перемещает Робота вверх;</li>
-                    <li style="list-style: decimal"><b>Down</b> – перемещает Робота вниз;</li>
-                    <li style="list-style: decimal"><b>Paint</b> – закрашивает текущую ячейку;</li>
-                    <li style="list-style: decimal"><b>WallFromLeft</b> – возвращает True если слева от Робота стена;</li>
-                    <li style="list-style: decimal"><b>WallFromRight</b> – возвращает True если справа от Робота стена;</li>
-                    <li style="list-style: decimal"><b>WallFromUp</b> – возвращает True если сверху от Робота стена;</li>
-                    <li style="list-style: decimal"><b>WallFromDown</b> – возвращает True если снизу от Робота стена;</li>
-                    <li style="list-style: decimal"><b>FreeFromLeft</b> – возвращает True если слева от Робота свободно;</li>
-                    <li style="list-style: decimal"><b>FreeFromRight</b> – возвращает True если справа от Робота свободно;</li>
-                    <li style="list-style: decimal"><b>FreeFromUp</b> – возвращает True если сверху от Робота свободно;</li>
-                    <li style="list-style: decimal"><b>FreeFromDown</b> – возвращает True если снизу от Робота свободно;</li>
-                    <li style="list-style: decimal"><b>CellIsPainted</b> – возвращает True если ячейка, в которой находится Робот, закрашена;</li>
-                    <li style="list-style: decimal"><b>CellIsFree</b> – возвращает True если ячейка, в которой находится Робот, не закрашена.</li>
-                </ul>
+                <ol>
+                    <li><b>Right</b> – перемещает Робота вправо;</li>
+                    <li><b>Left</b> – перемещает Робота влево;</li>
+                    <li><b>Up</b> – перемещает Робота вверх;</li>
+                    <li><b>Down</b> – перемещает Робота вниз;</li>
+                    <li><b>Paint</b> – закрашивает текущую ячейку;</li>
+                    <li><b>WallFromLeft</b> – возвращает True если слева от Робота стена;</li>
+                    <li><b>WallFromRight</b> – возвращает True если справа от Робота стена;</li>
+                    <li><b>WallFromUp</b> – возвращает True если сверху от Робота стена;</li>
+                    <li><b>WallFromDown</b> – возвращает True если снизу от Робота стена;</li>
+                    <li><b>FreeFromLeft</b> – возвращает True если слева от Робота свободно;</li>
+                    <li><b>FreeFromRight</b> – возвращает True если справа от Робота свободно;</li>
+                    <li><b>FreeFromUp</b> – возвращает True если сверху от Робота свободно;</li>
+                    <li><b>FreeFromDown</b> – возвращает True если снизу от Робота свободно;</li>
+                    <li><b>CellIsPainted</b> – возвращает True если ячейка, в которой находится Робот, закрашена;</li>
+                    <li><b>CellIsFree</b> – возвращает True если ячейка, в которой находится Робот, не закрашена.</li>
+                </ol>
 
                 Для вызова задания для исполнителя Робот используется следующий <b style="color: #FFDE5F;">шаблон программы</b>:<br><br>
                 <div class="code">
@@ -82,15 +82,15 @@
                         </tr>
                         <tr>
                             <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td><b>begin</b><c>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// начало программы</c></td>
+                            <td><b>begin</b><c>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// начало программы</c></td>
                         </tr>
                         <tr>
                             <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td><w>&nbsp;&nbsp;&nbsp;&nbsp;Task(<g>'c1'</g>);</w><c>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// вызов задания</c></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;&nbsp;Task(<g>'c1'</g>);</w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<c>// вызов задания</c></td>
                         </tr>
                         <tr>
                             <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td><b>end</b><w>.</w><c>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// конец программы</c></td>
+                            <td><b>end</b><w>.</w><c>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// конец программы</c></td>
                         </tr>
                     </tbody>
                 </table>
@@ -100,17 +100,17 @@
                 Здесь <b>Task</b> - процедура, содержащаяся в модуле Robot и вызывающая задание с указанным именем.<br></br>
 
                 Имеются следующие <b style="color: #FFDE5F;">группы заданий</b> для исполнителя Робот:
-                <ul>
-                    <li style="list-style: decimal"><b>a</b> – вводные задания;</li>
-                    <li style="list-style: decimal"><b>c</b> – цикл с параметром;</li>
-                    <li style="list-style: decimal"><b>if</b> – логические выражения;</li>
-                    <li style="list-style: decimal"><b>w</b> – циклы с условием;</li>
-                    <li style="list-style: decimal"><b>сif</b> – циклы и логические выражения;</li>
-                    <li style="list-style: decimal"><b>count</b> – переменные-счетчики;</li>
-                    <li style="list-style: decimal"><b>cc</b> – вложенные циклы;</li>
-                    <li style="list-style: decimal"><b>p</b> – процедуры без параметров;</li>
-                    <li style="list-style: decimal"><b>pp</b> – процедуры с параметрами.</li>
-                </ul><br>
+                <ol>
+                    <li><b>a</b> – вводные задания;</li>
+                    <li><b>c</b> – цикл с параметром;</li>
+                    <li><b>if</b> – логические выражения;</li>
+                    <li><b>w</b> – циклы с условием;</li>
+                    <li><b>сif</b> – циклы и логические выражения;</li>
+                    <li><b>count</b> – переменные-счетчики;</li>
+                    <li><b>cc</b> – вложенные циклы;</li>
+                    <li><b>p</b> – процедуры без параметров;</li>
+                    <li><b>pp</b> – процедуры с параметрами.</li>
+                </ol><br>
 
                 &nbsp;&nbsp;&nbsp;&nbsp;Для создания произвольного поля размера 9 x 11 используется процедура <b>StandardField</b> без параметров, а для создания поля размера <b>N x M</b> - процедура <b>Field</b>(N,M). Робот при этом помещается в центр поля.
             </span>

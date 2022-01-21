@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="theme6.css">
+    <title>Тема: Строки | pascalbook</title>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="#">Творческие работы</a></li>
+				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="index.html" class="shine-button b1">Главная</a>
+        <a href="theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="tests.html" class="shine-button b3">Тесты</a>
+        <a href="#" class="shine-button b4">Творческие работы</a>
+        <a href="#" class="shine-button b5">Олимпиадные задания</a>
+        <a href="#" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Тема: Строки</span><br>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                До этого урока мы работали, используя в основном числовые типы данных: <b style="color: #3D9BE8;">byte</b>, <b style="color: #3D9BE8;">integer</b>, <b style="color: #3D9BE8;">longint</b>, <b style="color: #3D9BE8;">real</b>.<br><br>
+
+                Для обработки текстов в Паскале широко используется тип <b style="color: #3D9BE8;">string</b> (строка). Количество  символов  в  строке может меняться от 0 до 255.<br><br>
+
+                Самый первый байт в строке имеет индекс 0 и содержит текущую длину строки. Первый значащий символ строки занимает второй байт и  имеет индекс 1.<br><br>
+
+                Вce действия над строками и символами реализуются с помощью описываемых ниже стандартных процедур и функций:<br><br>
+
+                <b style="color: #3D9BE8;">function </b><b>Сoncat</b>(S1, [S2,...,SN]) - возвращает строку, представляющую собой сцепление строк — параметров S1,S2,... ,SN.<br><br>
+
+                <b style="color: #3D9BE8;">function </b><b>Copy</b>(ST, INDEX, COUNT) - копирует  из строки ST COUNT символов, начиная с символа с номером INDEX.<br><br>
+
+                <b style="color: #3D9BE8;">procedure </b><b>Delete</b>(ST, INDEX, COUNT) - удаляет COUNT символов из строки ST, начиняя с символа с номером INDEX.<br><br>
+
+                <b style="color: #3D9BE8;">procedure </b><b>Insert</b>(SUBST, ST, INDEX) - вставляет подстроку SUBST в строку ST, начиная с символа с номером INDEX.<br><br>
+
+                <b style="color: #3D9BE8;">function </b><b>Length</b>(ST) - возвращает длину строки ST.<br><br>
+
+                <b style="color: #FFDE5F; font-style: italic;">Пример 1:</b> Вводиться строка ST. Вычислить её длину.
+                <blockquote>
+                    <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>program </b><w>zadacha5_1;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>var</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;a: </w><b style="color: #fff;">array</b><w>[1..10] </w><b>of </b><w>integer;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;i: byte;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>begin</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;writeln(</w><g>'Введите элементы массива:'</g><w>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;for </b><w>i:=1 </w><b>to </b><w>10 </w><b>do </b><w>readln(a[i]);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;writeln(</w><g>'Вывод элементов массива:'</g><w>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;for </b><w>i:=1 </w><b>to </b><w>10 </w><b>do </b><w>writeln(a[i]);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>end</b><w>.</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                </blockquote>
+            </span>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="theme9.html" style="color: #42C0C7;">Предыдущая тема</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="erorr.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2021 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

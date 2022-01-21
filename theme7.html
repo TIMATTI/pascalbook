@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="theme6.css">
-    <title>Тема: Алгоритмы ветвления | pascalbook</title>
+    <title>Тема: Алгоритмы с ветвлениями | pascalbook</title>
 </head>
 <body>
     <div class="container">
@@ -43,7 +43,7 @@
     </div>
     <div class="cent-container mt-0 mb-0">
         <div class="content">
-            <span class="s1">Тема: Алгоритмы ветвления</span><br>
+            <span class="s1">Тема: Алгоритмы с ветвлениями</span><br>
             <div class="line"></div><br>
             <span class="s2">
                 &nbsp;&nbsp;&nbsp;&nbsp;В языке Паскаль используется <b style="color: #FFDE5F;">два оператора</b> для реализации <b style="color: #FFDE5F;">условных переходов</b> - <b>IF</b> и <b>CASE</b>, а также оператор безусловного перехода <b>GOTO</b>(этот оператор не рассматривается). Они позволяют нарушить последовательный порядок выполнения инструкций программы.<br><br><br><br>
@@ -60,11 +60,11 @@
                         </tr>
                         <tr>
                             <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<b>then </b><w style="font-style: italic">оператор 1</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>then </b><w style="font-style: italic"><оператор 1></w></td>
                         </tr>
                         <tr>
                             <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<b>else </b><w style="font-style: italic">оператор 2;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>else </b><w style="font-style: italic"><оператор 2>;</w></td>
                         </tr>
                     </tbody>
                     </table>
@@ -75,7 +75,8 @@
                 <b>В противном случае</b> будет выполнен <n style="font-style: italic;">оператор 2</n>, следующий за словом <b style="color: #3D9BE8;">else</b>, при этом <n style="font-style: italic;">оператор 1</n> пропускается.<br>
                 После выполнения указанных операторов программа переходит к выполеннию команды, стоящей непосредственно после оператора <b style="color: #3D9BE8;">if</b>.<br><br>
 
-                Перед ключевым словом <b style="color: #3D9BE8;">else</b> точка с запятой <b>НЕ СТАВИТСЯ</b>!<br>
+                Перед ключевым словом <b style="color: #3D9BE8;">else</b> точка с запятой <b style="color: #eb2d1f;">НЕ СТАВИТСЯ</b>!<br> 
+                Если поставить точку с запятой, то PascalABC будет воспринимать (;) как конец логического ветвления.<br><br>
 
                 <b style="color: #3D9BE8;">else</b> - часть в операторе <b style="color: #3D9BE8;">if</b> может отсутствовать:<br>
                 <div class="code">
@@ -83,7 +84,7 @@
                     <tbody>
                         <tr>
                             <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td><b>if </b><w style="font-style: italic">условие</w><b> then </b><w style="font-style: italic">оператор 1</w></td>
+                            <td><b>if </b><w style="font-style: italic"><условие></w><b> then </b><w style="font-style: italic"><оператор 1></w></td>
                         </tr>
                     </tbody>
                     </table>
@@ -152,15 +153,15 @@
                     <tbody>
                         <tr>
                             <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td><b>case </b><w style="font-style: italic">выражение</w><b> of</b></td>
+                            <td><b>case </b><w style="font-style: italic"><выражение></w><b> of</b></td>
                         </tr>
                         <tr>
                             <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(1): оператор;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(1): <оператор 1>;</w></td>
                         </tr>
                         <tr>
                             <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(2): оператор;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(2): <оператор 2>;</w></td>
                         </tr>
                         <tr>
                             <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
@@ -168,7 +169,7 @@
                         </tr>
                         <tr>
                             <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(n): оператор;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(n): <оператор n>;</w></td>
                         </tr>
                         <tr>
                             <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
@@ -188,11 +189,11 @@
                         </tr>
                         <tr>
                             <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(1): оператор;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(1): <оператор 1>;</w></td>
                         </tr>
                         <tr>
                             <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(2): оператор;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(2): <оператор 2>;</w></td>
                         </tr>
                         <tr>
                             <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
@@ -200,11 +201,11 @@
                         </tr>
                         <tr>
                             <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(n): оператор;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w style="font-style: italic">вариант(n): <оператор n>;</w></td>
                         </tr>
                         <tr>
                             <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<b>else</b><w> оператор;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>else</b><w style="font-style: italic"> <оператор>;</w></td>
                         </tr>
                         <tr>
                             <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
@@ -228,15 +229,15 @@
                         </tr>
                         <tr>
                             <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<w>'A'..'Z, 'a'..'z': writeln(<g>'Строка'</g>);</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w><g>'A'</g>..<g>'Z'</g>, <g>'a'</g>..<g>'z'</g>: writeln(<g>'Строка'</g>);</w></td>
                         </tr>
                         <tr>
                             <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<w>'0'..'9': writeln(<g>'Число'</g>);</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w><g>'0'</g>..<g>'9'</g>: writeln(<g>'Число'</g>);</w></td>
                         </tr>
                         <tr>
                             <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
-                            <td>&nbsp;&nbsp;&nbsp;<w>'+', '-', '*', '/': writeln(<g>'Знак'</g>);</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w><g>'+'</g>, <g>'-'</g>, <g>'*'</g>, <g>'/'</g>: writeln(<g>'Знак'</g>);</w></td>
                         </tr>
                         <tr>
                             <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
@@ -256,7 +257,7 @@
         <div class="content2">
             <div class="line"></div>
             <span class="left" style="color: #42C0C7;">←<a href="theme6.html" style="color: #42C0C7;">Предыдущая тема</a></span>
-            <span class="right" style="color: #42C0C7;"><a href="erorr.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+            <span class="right" style="color: #42C0C7;"><a href="theme8.html" style="color: #42C0C7;">Следующая тема</a>→</span>
         </div>
     </div>
     <div class="bot-container mt-3 mb-4">
