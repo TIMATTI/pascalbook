@@ -33,17 +33,32 @@
         color: #fff;
     }
 
-    .image {background: #fff;}
+    .im6 {width: 90px;}
+}
+
+@media (max-width: 1399.98px) {
+    .im2 {width: 98%;}
+}
+
+@media (max-width: 1199.98px) {
+    .im1 {width: 98%;}
 }
 
 @media (max-width: 787.98px) {
-    .im1 {width: 100%;}
+    .im6 {width: 50px}
 }
 
 @media (max-width: 695.98px) {
     .s1 {font-size: 25px;}
 
     .s2 {font-size: 16px;}
+
+    .im5 {width: 97%;}
+}
+
+@media (max-width: 505.98px) {
+    .im3,
+    .im4 {width: 97%;}
 }
 
 @media (max-width: 399.98px) {

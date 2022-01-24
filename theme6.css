@@ -71,6 +71,12 @@
     td {font-size: 14px;}
 }
 
+/*--------------------------cent-cont----------------------------*/
+
+@media (max-width: 10099.98px) {
+    .right1 {visibility: hidden;} 
+}
+
 /*--------------------------bot-container----------------------------*/
 
 @media (max-width: 10099.98px) {

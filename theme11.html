@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="theme6.css">
+    <title>Тема: Процедуры и функции | pascalbook</title>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="#">Творческие работы</a></li>
+				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="index.html" class="shine-button b1">Главная</a>
+        <a href="theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="tests.html" class="shine-button b3">Тесты</a>
+        <a href="#" class="shine-button b4">Творческие работы</a>
+        <a href="#" class="shine-button b5">Олимпиадные задания</a>
+        <a href="#" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Тема: Процедуры и функции</span><br>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                В большинстве языков программирования предусмотренно использовать вспомогательный алгоритм как подпрограмму. Для работы подалгоритма необходимо <b>присвоить имя</b> и <b>описать алгоритм</b> по правилам языка Паскаль.<br><br>
+
+                В случае использования исполнителя <b>Чертёжник</b> появляются случаи повторения однобразных действий. При использовании обычного метода написания программы. Программа становится громоздкой. Чтобы этого избежать используют <b style="color: #FFDE5F;">процедуры</b> и <b style="color: #FFDE5F;">функции</b>. <br><br> 
+
+                Для единообразия <b style="color: #FFDE5F;">функции</b> и <b style="color: #FFDE5F;">процедуры</b> называются <b>подпрограммами</b>.<br><br><br><br>
+
+
+                <span class="s3">Описание процедур и функций</span>
+                <div class="line l1"></div><br>
+                Любая используемая в программе процедура или функция должна быть предварительно описана в разделе описаний.<br><br>
+
+                <b style="color: #FFDE5F;">Описание процедуры</b> имеет вид:
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>procedure </b><w style="font-style: italic"><имя> (<список формальных параметров>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w style="font-style: italic"><раздел описаний></w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;begin</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w style="font-style: italic"><операторы></w></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;end;</b></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                <b style="color: #FFDE5F;">Описание функции</b> имеет вид:
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>function </b><w style="font-style: italic"><имя> (<список формальных параметров>): <тип возвращаемого значения>;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w style="font-style: italic"><раздел описаний></w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;begin</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w style="font-style: italic"><операторы></w></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;end;</b></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                <n style="font-style: italic;">Операторы подпрограммы</n>, окаймленные операторными скобками <b style="color: #3D9BE8;">begin</b>/<b style="color: #3D9BE8;">end</b>, называются <n style="font-style: italic;">телом</n> этой подпрограммы.<br><br>
+
+                <n style="font-style: italic;">Список формальных параметров</n> вместе с окружающими скобками может <b>отсутствовать</b>. Он состоит из одной или нескольких секций, разделенных символом ";". Каждая секция состоит из списка переменных, перечисляемых через запятую, после которого следуют двоеточие и тип.<br><br>
+
+                <b style="color: #FFDE5F; font-style: italic;">Пример 1:</b> Процедура считающая сумму двух переменных.
+                <blockquote>
+                    <div class="code">
+                        <table>
+                        <tbody>
+                            <tr>
+                                <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>procedure </b><w>Sum(x,y: </w><b>real</b><w>; res: </w><b>real</b><w>);</w></td>
+                            </tr>
+                            <tr>
+                                <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>&nbsp;&nbsp;&nbsp;begin</b></td>
+                            </tr>
+                            <tr>
+                                <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>res:=x+y;</w></td>
+                            </tr>
+                            <tr>
+                                <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>&nbsp;&nbsp;&nbsp;end;</b></td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div><br>
+                </blockquote><br><br>
+
+
+                <span class="s3">Вызов подпрограммы</span>
+                <div class="line l1"></div><br>
+                Подпрограмма один раз описывается и может быть многократно вызвана. Для вызова процедуры используется <b>оператор вызова</b> процедуры:<br><br>
+
+                <b style="color: #FFDE5F; font-style: italic;">Пример 2:</b> Использование процедуры из <b style="color: #FFDE5F; font-style: italic;">Пример 1</b> в основной программе.
+                <blockquote>
+                    <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>var</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w>a,b,res: </w><b>real</b><w>;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>begin</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;readln(a,b);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;Sum(a,b,res);</w>&nbsp;&nbsp;&nbsp;<c>//вызов прцедуры</c></td>
+                        </tr>
+                        <tr>
+                            <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;writeln(a,<g>' + '</g>,b,<g>' = '</g>,res);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;Sum(a*2,b,res);</w>&nbsp;&nbsp;&nbsp;<c>//вызов прцедуры, где a=a*2</c></td>
+                        </tr>
+                        <tr>
+                            <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;writeln(<g>'('</g>,a,<g>'*2) + '</g>,b,<g>' = '</g>,res);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;Sum(a,b+5,res);</w>&nbsp;&nbsp;&nbsp;<c>//вызов прцедуры, где b=b+5</c></td>
+                        </tr>
+                        <tr>
+                            <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;writeln(a,<g>' + ('</g>,b,<g>'+5) = '</g>,res);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>11.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>end.</b></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+                </blockquote><br><br>
+
+
+                <span class="s3">Переменная Result</span>
+                <div class="line l1"></div><br>
+                Внутри тела любой функции определена специальная переменная с именем <b style="color: #3D9BE8;">Result</b>, которая хранит результат вычисления функции. Ее тип совпадает с типом возвращаемого значения функции.<br>
+
+                <b style="color: #FFDE5F; font-style: italic;">Пример 3:</b> Функция считающая сумму(разность) двух чисел.
+                <blockquote>
+                    <div class="code">
+                        <table>
+                        <tbody>
+                            <tr>
+                                <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><c>{----фунция суммы----}</c></td>
+                            </tr>
+                            <tr>
+                                <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>function </b><w>Sum(x,y: </w><b>real</b><w>): </w><b>real</b><w>;</w></td>
+                            </tr>
+                            <tr>
+                                <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>&nbsp;&nbsp;&nbsp;begin</b></td>
+                            </tr>
+                            <tr>
+                                <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>Result:=x+y;</w></td>
+                            </tr>
+                            <tr>
+                                <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>&nbsp;&nbsp;&nbsp;end;</b></td>
+                            </tr>
+                            <tr>
+                                <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><c>{----фунция разности----}</c></td>
+                            </tr>
+                            <tr>
+                                <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>function </b><w>Sub(x,y: </w><b>real</b><w>): </w><b>real</b><w>;</w></td>
+                            </tr>
+                            <tr>
+                                <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>&nbsp;&nbsp;&nbsp;begin</b></td>
+                            </tr>
+                            <tr>
+                                <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>Result:=x-y;</w></td>
+                            </tr>
+                            <tr>
+                                <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>&nbsp;&nbsp;&nbsp;end;</b></td>
+                            </tr>
+                            <tr>
+                                <td><w>11.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><c>{----основная программа----}</c></td>
+                            </tr>
+                            <tr>
+                                <td><w>12.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>begin</b></td>
+                            </tr>
+                            <tr>
+                                <td><w>13.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><w>&nbsp;&nbsp;&nbsp;writeln(<g>'Функция суммы: </g>,Sum(2,3));</w></td>
+                            </tr>
+                            <tr>
+                                <td><w>14.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><w>&nbsp;&nbsp;&nbsp;writeln(<g>'Функция разности: </g>,Sub(2,3));</w></td>
+                            </tr>
+                            <tr>
+                                <td><w>15.&nbsp;&nbsp;&nbsp;</w></td>
+                                <td><b>end.</b></td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div><br>
+                </blockquote>
+
+                Если внутри функции не присвоить переменной <b style="color: #3D9BE8;">Result</b> некоторое значение, то функция вернет в результате своего вызова <b style="color: #FFDE5F;">непредсказуемое значение</b>.
+            </span>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="theme10.html" style="color: #42C0C7;">Предыдущая тема</a></span>
+            <span class="right1" style="color: #42C0C7;"><a href="theme12.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2021 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
