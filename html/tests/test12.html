@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/test15.css">
+    <title>Тест: Основные понятия языка Pascal | pascalbook</title>
+    <script>  
+        function check() {
+        myform=document.forms.test;
+        i=0;
+        if (myform.spirit0.value=="32") i++;
+        if (myform.spirit1.value=="2400")i++;
+        if (myform.and000[2].checked)i++;
+        if ((myform.OR[0].checked)&&(myform.OR[4].checked)&&(!myform.OR[1].checked)&&(!myform.OR[2].checked)&&(!myform.OR[3].checked))i++;
+        if (myform.an[2].checked)i++;
+            result=(myform.spirit0.value=="32")&&(myform.spirit1.value=="2400")&&(myform.and000[2].checked)&&(myform.OR[0].checked)&&(myform.OR[4].checked)&&(!myform.OR[1].checked)&&(!myform.OR[2].checked)&&(!myform.OR[3].checked)&&(myform.an[2].checked)?
+            "Правильно!" : "Неправильно :-(" ; 
+            alert("Результат проверки: "+result+"\nВаша оценка: "+i*2);          
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="../tests/tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="#">Творческие проекты</a></li>
+				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="index.html" class="shine-button b1">Главная</a>
+        <a href="theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="../tests/tests.html" class="shine-button b3">Тесты</a>
+        <a href="#" class="shine-button b4">Творческие проекты</a>
+        <a href="#" class="shine-button b5">Олимпиадные задания</a>
+        <a href="#" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Тест: Основные понятия языка Pascal</span>
+            <div class="line"></div><br>
+            <div class="question">
+                <form name="test">
+                    <b>&nbsp;1.</b> Как записать оператор присваивания, меняющий знак у переменной <b>t</b>?
+                    <blockquote>
+                        <input type="radio" name="and000"><b> t = - t</b><br>
+                        <input type="radio" name="and000"><b> t = - t</b><br>
+                        <input type="radio" name="and000"><b> t := - t</b><br>
+                        <input type="radio" name="and000"><b> t / (-1)</b><br>
+                    </blockquote>
+            
+                    <b>&nbsp;2.</b> Вычислите выражение: 24/(3*4)-24/3/4+24/3*4
+                    <blockquote>
+                        <input type="text" name="spirit0" class="spirit0">
+                    </blockquote>
+            
+                    <b>&nbsp;3.</b> Дано число а - длина ребра игрального кубика. Определить объем кубика V и его полную поверхность S.
+                    <blockquote>
+                        <input type="checkbox" name="OR"><b> V = a*a*a</b><br>
+                        <input type="checkbox" name="OR"><b> V = a*a</b><br>
+                        <input type="checkbox" name="OR"><b> S = sqr(a)</b><br>
+                        <input type="checkbox" name="OR"><b> S = 4*a*a</b><br>
+                        <input type="checkbox" name="OR"><b> S = 6*sqr(a)</b><br>
+                    </blockquote>
+            
+                    <b>&nbsp;4.</b> Галя бежит навстречу Вале со скоростью Vg км/час, а Валя идет к Гале со скорость Vv км/час. Определить, через какое время встретятся подруги, если дорога прямая, а начальное расстояние между ними было S км.
+                    <blockquote>
+                        <input type="radio" name="an"><b> ch : = S / Vg + S / Vv</b><br>
+                        <input type="radio" name="an"><b> ch : = S / Vg + Vv</b><br>
+                        <input type="radio" name="an"><b> ch : = S / (Vg + Vv)</b><br>
+                    </blockquote>
+            
+                    <b>&nbsp;5.</b> Известна стоимость монитора (270$), системного блока (430$), клавиатуры (12$), мыши (8$), принтера (80$). Сколько будут стоить 3 таких компьютера?
+                    <blockquote>
+                        <input type="text" name="spirit1" class="spirit1">
+                    </blockquote>
+            
+                    <input name="send" type="button" value=" Проверить " class="send" onclick="check()">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="test11.html" style="color: #42C0C7;">Предыдущий тест</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="test13.html" style="color: #42C0C7;">Следующий тест</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2021 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
