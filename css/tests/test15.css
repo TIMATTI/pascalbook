@@ -32,6 +32,12 @@
         font-size: 18px;
         font-family: "Arial";
     }
+
+    .mode {
+        margin-top: -19px;
+        margin-left: 20px;
+    }
+    
     
     blockquote {
         padding-left: 5%;
