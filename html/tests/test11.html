@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/test15.css">
+    <link rel="stylesheet" href="../../css/tests/test15.css">
     <title>Тест: Первая программа | pascalbook</title>
     <script>
       function sbros() {x=document.forms[0].elements[7].value;for (i=1; i<=x; i++) {document.forms[i].reset();}}function step3() {var i=0;var j=0;var schet=0;var jm=document.forms[0].elements[7].value;var im=document.forms[0].elements[8].value;for (j=1; j<=jm; j++){for (i=0; i<im; i++){if (document.forms[j].R1[i].checked==true){schet++;}}};if (schet<jm){alert("Надо ответить на ВСЕ вопросы!");return;}eo=document.forms[0].elements[9].value;e=new Array();e=eo.split("/");sr=new Array(1.25,1.25,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1,0);o=new Array();var r=0;var tp=5;var kr=5;var test=2;var ll=14;var osh=0;var text="";for (j=1; j<=jm; j++){for (i=0; i<im; i++){if (document.forms[j].R1[i].checked==true){o[j-1]=i*0.7000000000000001+3;}}};for (j=0; j<jm; j++){if (o[j]==e[j+tp]){r=r+1*sr[j];}else{osh++;}};if (osh!=0){text="Ошибочных ответов - "+osh+"."}if (test==1){if (kr==0){sbros(); alert("Количество правильных ответов: "+r+" из "+jm+" возможных ("+Math.round(r*100/jm)+"%).");}else{sbros(); alert("Набрано баллов: "+(r*100)+" из "+(ll*100)+" возможных ("+Math.round(r*100/ll)+"%).");}}else{if (kr==0){alert("Количество правильных ответов: "+r+" из "+jm+" возможных ("+Math.round(r*100/jm)+"%).");}else{alert("Набрано баллов: "+(r*100)+" из "+(ll*100)+" возможных ("+Math.round(r*100/ll)+"%).\n"+text)}}}
@@ -24,19 +24,19 @@
 		    <label for="op"></label>
 		    <nav class="nav">
 			    <ul>
-				    <li><a class="nav-item i1" href="index.html">Главная</a></li>
-				    <li><a class="nav-item i2" href="theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i1" href="../index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="../themes/theme.html">Темы уроков</a></li>
 				    <li><a class="nav-item i3" href="../tests/tests.html">Тесты</a></li>
 				    <li><a class="nav-item i4" href="#">Творческие проекты</a></li>
 				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
-                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+            <li><a class="nav-item i6" href="#">Занятия</a></li>
 			    </ul>
 		    </nav>
         </div>
     </div>
     <div class="top-container mb-4">
-        <a href="index.html" class="shine-button b1">Главная</a>
-        <a href="theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="../index.html" class="shine-button b1">Главная</a>
+        <a href="../themes/theme.html" class="shine-button b2">Темы уроков</a>
         <a href="../tests/tests.html" class="shine-button b3">Тесты</a>
         <a href="#" class="shine-button b4">Творческие проекты</a>
         <a href="#" class="shine-button b5">Олимпиадные задания</a>

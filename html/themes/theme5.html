@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/themes/theme5.css">
+    <title>Тема: GraphABC | pascalbook</title>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="../index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="../themes/theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="../tests/tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="#">Творческие проекты</a></li>
+				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="../index.html" class="shine-button b1">Главная</a>
+        <a href="../themes/theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="../tests/tests.html" class="shine-button b3">Тесты</a>
+        <a href="#" class="shine-button b4">Творческие проекты</a>
+        <a href="#" class="shine-button b5">Олимпиадные задания</a>
+        <a href="#" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Тема: GraphABC</span><br>
+            <div class="line"></div><br>
+            <span class="s2">
+                &nbsp;&nbsp;&nbsp;&nbsp;Модуль растровой графики <b>GraphABC</b> обходится без объектов, хотя его возможности практически совпадают с графическими возможностями <b>Borland Delphi</b>. Он доступен в несобытийных программах и позволяет легко создавать анимацию без мерцания.<br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;​Модуль <b>GraphABC</b> содержит константы, типы, процедуры, функции и классы для рисования в графическом окне. Они подразделяются на следующие группы:
+                <ul>
+                    <li style="list-style: decimal"><a style="color: #42C0C7;" href="#1">Графические примитивы</a>;</li>
+                    <li style="list-style: decimal"><a style="color: #42C0C7;" href="#2">Действия с цветом</a>;</li>
+                    <li style="list-style: decimal"><a style="color: #42C0C7;" href="#3">Действия с пером</a>;</li>
+                    <li style="list-style: decimal"><a style="color: #42C0C7;" href="#4">Действия с кистью</a>;</li>
+                    <li style="list-style: decimal"><a style="color: #42C0C7;" href="#5">Действия со шрифтом</a>;</li>
+                    <li style="list-style: decimal">Действия с рисунками: описатели;</li>
+                    <li style="list-style: decimal">Действия с рисунками: класс Picture;</li>
+                    <li style="list-style: decimal"><a style="color: #42C0C7;" href="#6">Действия с графическим окном</a>;</li>
+                    <li style="list-style: decimal"><a style="color: #42C0C7;" href="#7">Задание(определение) режимов вывода</a>.</li>
+                </ul>
+            </span><br><br>
+
+            <span class="s3" id="1">Графические примитивы</span>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                &nbsp;&nbsp;&nbsp;&nbsp;Процедуры и функции рисования и установки параметров рисования аналогичны методам и свойствам класса <b>TCanvas</b> в <b>Delphi</b>. Например, вместо свойства <b>Canvas.Brush.Color</b> используется пара: процедура <b>SetBrushColor</b>(color) и функция <b>BrushColor</b>.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetPixel</b>(x,y,color: integer); - закрашивает один пиксель с координатами (x,y) цветом color.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>GetPixel</b>(x,y): integer; -возвращает текущее значение цвета для пиксела с координатами (x,y).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>MoveTo</b>(x,y: integer); - передвигает невидимое перо к точке с координатами (x,y); эта функция работает в паре с функцией LineTo(x,y).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>LineTo</b>(x,y: integer); - рисует отрезок от текущего положения пера до точки (x,y); координаты пера при этом также становятся равными (x,y).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Line</b>(x1,y1,x2,y2: integer); - рисует отрезок с началом в точке (x1,y1) и концом в точке (x2,y2).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Circle</b>(x,y,r: integer); - рисует окружность с центром в точке (x,y) и радиусом r.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Ellipse</b>(x1,y1,x2,y2: integer); - рисует эллипс, заданный своим описанным прямоугольником с координатами противоположных вершин (x1,y1) и (x2,y2).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Rectangle</b>(x1,y1,x2,y2: integer); - рисует прямоугольник, заданный координатами противоположных вершин (x1,y1) и (x2,y2).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>RoundRect</b>(x1,y1,x2,y2,w,h: integer); - рисует прямоугольник со скругленными краями; (x1,y1) и (x2,y2) задают пару противоположных вершин, а w и h – ширину и высоту эллипса, используемого для скругления краев.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Arc</b>(x,y,r,a1,a2: integer); - рисует дугу окружности с центром в точке (x,y) и радиусом r, заключенной между двумя лучами, образующими углы a1 и a2 с осью OX (a1 и a2 – вещественные, задаются в градусах и отсчитываются против часовой стрелки).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Pie</b>(x,y,r,a1,a2: integer); - рисует сектор окружности, ограниченный дугой (параметры процедуры имеют тот же смысл, что и в процедуре Arc).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Chord</b>(x,y,r,a1,a2: integer); - рисует фигуру, ограниченную дугой окружности и отрезком, соединяющим ее концы (параметры процедуры имеют тот же смысл, что и в процедуре Arc).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>TextOut</b>(x,y: integer; s: string); - выводит строку s в позицию (x,y) (точка (x,y) задает верхний левый угол прямоугольника, который будет содержать текст из строки s).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>FloodFill</b>(x,y,color: integer); - заливает область одного цвета цветом color, начиная с точки (x,y).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>FillRect</b>(x1,y1,x2,y2: integer); - заливает прямоугольник, заданный координатами противоположных вершин (x1,y1) и (x2,y2), цветом текущей кисти.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Polygon</b>(var a; n: integer); строит ломаную по n точкам, координаты которых заданы в массиве a элементов типа Point.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Polyline</b>(var a; n: integer); -строит замкнутую ломаную по n точкам, координаты которых заданы в массиве a элементов типа Point.<br><br>
+            </span><br><br>
+
+            <span class="s3" id="2">Цветовые константы и функции для работы с цветом</span>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                &nbsp;&nbsp;&nbsp;&nbsp;Модуль <b>GraphABC</b> содержит константы и функции для работы с цветами. Тип <b>ColorType</b>, описывающий цвет, определен следующим образом:<br><br>
+
+                <b style="color: #3D9BE8;">type</b> <b>ColorType</b>=integer; - стандартные цвета задаются символическими константами:<br>
+                <table class="bl">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <b>clBlack</b> – черный<br>
+                                <b>clPurple</b> – фиолетовый<br>
+                                <b>clWhite</b> – белый<br>
+                                <b>clMaroon</b> – темно-красный<br>
+                                <b>clRed</b> – красный<br>
+                                <b>clNavy</b> – темно-синий<br>
+                                <b>clGreen</b> – зеленый<br>
+                                <b>clBrown</b> – коричневый<br>
+                                <b>clBlue</b> – синий<br>
+                                <b>clSkyBlue</b> – голубой<br>
+                                <b>clYellow</b> – желтый<br>
+                                <b>clCream</b> – кремовый<br>
+                            </td>
+                            <td class="bll">
+                                <b>clAqua</b> – бирюзовый<br>
+                                <b>clOlive</b> – оливковый<br>
+                                <b>clFuchsia</b> – сиреневый<br>
+                                <b>clTeal</b> – сине-зеленый<br>
+                                <b>clGray</b> – темно-серый<br>
+                                <b>clLime</b> – ярко-зеленый<br>
+                                <b>clMoneyGreen</b> – цвет зеленых денег<br>
+                                <b>clLtGray</b> – светло-серый<br>
+                                <b>clDkGray</b> – темно-серый<br>
+                                <b>clMedGray</b> – серый<br>
+                                <b>clSilver</b> – серебряный<br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+
+                <span class="s3">Для работы с цветами</span> используются следующие функции(процедуры):<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetPixel</b>(x,y,color: integer); - закрашивает один пиксель с координатами (x,y) цветом color.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>RGB</b>(r,g,b: integer): ColorType; - возвращает целое значение, являющееся кодом цвета, который содержит красную, зеленую и синюю составляющие с интенсивностями r, g и b соответственно (r, g и b – целые в диапазоне от 0 до 255, причем, 0 соответствует минимальной интенсивности, 255 – максимальной).<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>GetRed</b>(color: ColorType): integer; - выделяет красную составляющую из цвета color (целое в диапазоне от 0 до 255).<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>GetGreen</b>(color: ColorType): integer; - выделяет зеленую составляющую из цвета color (целое в диапазоне от 0 до 255).<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>GetBlue</b>(color: ColorType): integer; - выделяет синюю составляющую из цвета color (целое в диапазоне от 0 до 255).<br><br>
+            </span><br><br>
+
+            <span class="s3" id="3">Действия с пером</span>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                <b style="color: #3D9BE8;">function</b> <b>PenX</b>: integer;<br>
+                <b style="color: #3D9BE8;">function</b> <b>PenY</b>: integer; - возвращают текущие координаты пера.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetPenColor</b>(color: integer); - устанавливает цвет пера, задаваемый параметром color.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>PenColor</b>: integer; - возвращает текущий цвет пера.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetPenWidth</b>(w: integer); - устанавливает ширину пера, равную w пикселам.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>PenWidth</b>: integer; - возвращает текущую ширину пера.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetPenStyle</b>(ps: integer); - устанавливает стиль пера, задаваемый параметром ps.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>PenStyle</b>: integer; - возвращает текущий стиль пера.<br><br>
+
+                Стили пера задаются следующими именованными константами:<br>
+                <table class="tabl1">
+                    <tbody>
+                        <tr>
+                            <td><b>Значение</b></td>
+                            <td>Описание</td>
+                        </tr>
+                        <tr>
+                            <td><b>psSolid</b></td>
+                            <td>Сплошная линия (установлено по умолчанию)</td>
+                        </tr>
+                        <tr>
+                            <td><b>psDash</b></td>
+                            <td>Штриховая линия</td>
+                        </tr>
+                        <tr>
+                            <td><b>psDot</b></td>
+                            <td>Пунктирная линия</td>
+                        </tr>
+                        <tr>
+                            <td><b>psDashDot</b></td>
+                            <td>Штрихпунктирная линия</td>
+                        </tr>
+                        <tr>
+                            <td><b>psDashDotDot</b></td>
+                            <td>Линия, чередующая штрих и два пунктира</td>
+                        </tr>
+                        <tr>
+                            <td><b>psClear</b></td>
+                            <td>Отсутствие линии</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetPenMode</b>(m: integer); - устанавливает режим пера, задаваемый параметром m.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>PenMode</b>: integer; - возвращает текущий режим пера. Режим пера определяет, как цвет пера взаимодействует с цветом поверхности.<br><br>
+
+                Режимы пера задаются следующими именованными константами:
+                <ul>
+                    <li><b>pmCopy</b> – обычный режим; при рисовании цвет поверхности заменяется цветом пера;</li>
+                    <li><b>pmNot</b> – режим инвертирования; при рисовании цвет поверхности инвертируется (становится негативным), а цвет пера при этом игнорируется.</li>
+                </ul>
+            </span><br><br>
+
+            <span class="s3" id="4">Действия с кистью</span>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                <b style="color: #3D9BE8;">procedure</b> <b>SetBrushColor</b>(color: integer); - устанавливает цвет кисти, задаваемый параметром color.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>BrushColor</b>: integer; - возвращает текущий цвет кисти.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetBrushPicture</b>(fname: string); - устанавливает в качестве образца для закраски кистью образец, хранящийся в файле fname, при этом текущий цвет кисти при закраске игнорируется.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>ClearBrushPicture</b>; - очищает рисунок-образец, выбранный для кисти.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetBrushStyle</b>(bs: integer); - устанавливает стиль кисти, задаваемый параметром bs.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>BrushStyle</b>: integer; - возвращает текущий стиль кисти.<br><br>
+
+                Стили кисти задаются следующими именованными константами:<br>
+                <table class="tabl2">
+                    <tbody>
+                        <tr>
+                            <td><b>Значение</b></td>
+                            <td><b>Шаблон</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>bsSolid</b></td>
+                            <td><img class="images" src="https://static.wixstatic.com/media/861550_8afaf921dd744e47a6c9b811f580f760~mv2.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td><b>bsClear</b></td>
+                            <td><img class="images" src="https://static.wixstatic.com/media/861550_901ce674dd7e4159930725be17cdc862~mv2.gif"></td>
+                        </tr>
+                        <tr>
+                            <td><b>bsHorizontal</b></td>
+                            <td><img class="images" src="https://static.wixstatic.com/media/861550_3c40b90004194e94bc17e1899123a113~mv2.png"></td>
+                        </tr>
+                        <tr>
+                            <td><b>bsVertical</b></td>
+                            <td><img class="images" src="https://static.wixstatic.com/media/861550_50599ad9488e42028d072f439b23e75c~mv2.png"></td>
+                        </tr>
+                        <tr>
+                            <td><b>bsCross</b></td>
+                            <td><img class="images" src="https://static.wixstatic.com/media/861550_feddf2e0e2e442fa9ced85a1199040d4~mv2.png"></td>
+                        </tr>
+                        <tr>
+                            <td><b>bsDiagCross</b></td>
+                            <td><img class="images" src="https://static.wixstatic.com/media/861550_121c3170625745f1bd82e2e0570b9496~mv2.png"></td>
+                        </tr>
+                        <tr>
+                            <td><b>bsBDiagonal</b></td>
+                            <td><img class="images" src="https://static.wixstatic.com/media/861550_5a90202d48be4c078a1056d552cccbb7~mv2.png"></td>
+                        </tr>
+                        <tr>
+                            <td><b>bsFDiagonal</b></td>
+                            <td><img class="images" src="https://static.wixstatic.com/media/861550_0090db7e900346faaea9fafe8f3fde42~mv2.png"></td>
+                        </tr>
+                    </tbody>
+                </table><br>
+            </span><br><br>
+
+            <span class="s3" id="5">Действия со шрифтом</span>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                <b style="color: #3D9BE8;">procedure</b> <b>SetFontColor</b>(color: integer); - устанавливает цвет шрифта.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>FontColor</b>: integer; - возвращает  текущий цвет шрифта.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetFontSize</b>(sz: integer); - устанавливает  размер шрифта в пунктах.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>FontSize</b>: integer; - возвращает  текущий размер шрифта в пунктах.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetFontName</b>(name: string); - устанавливает  наименование шрифта.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>FontName</b>: string; - возвращает  текущее наименование шрифта.<br><br>
+
+                По умолчанию установлен шрифт, имеющий наименование MS Sans Serif.<br>
+                Наиболее распространенные шрифты – это Times, Arial и Courier New.<br>
+                Наименование шрифта можно набирать без учета регистра.<br><br>
+
+                Стили шрифта задаются следующими именованными константами:
+                <ul>
+                    <li style=" list-style: decimal"><b>fsNormal </b>– обычный;</li>
+                    <li style=" list-style: decimal"><b>fsBold </b>– жирный;</li>
+                    <li style=" list-style: decimal"><b>fsItalic </b>– наклонный;</li>
+                    <li style=" list-style: decimal"><b>fsBoldItalic </b>– жирный наклонный;</li>
+                    <li style=" list-style: decimal"><b>fsUnderline </b>– подчеркнутый;</li>
+                    <li style=" list-style: decimal"><b>fsBoldUnderline </b>– жирный подчеркнутый;</li>
+                    <li style=" list-style: decimal"><b>fsItalicUnderline </b>– наклонный подчеркнутый;</li>
+                    <li style=" list-style: decimal"><b>fsBoldItalicUnderline </b>– жирный наклонный подчеркнутый.</li>
+                </ul>
+
+                <b style="color: #3D9BE8;">function</b> <b>TextWidth</b>(s: string): integer; - возвращает ширину строки s в пикселях при текущих настройках шрифта.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>TextHeight</b>(s: string): integer; - возвращает высоту строки s в пикселях при текущих настройках шрифта.<br><br>
+            </span><br><br>
+
+            <span class="s3" id="6">Действия с графическим окном</span>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                <b style="color: #3D9BE8;">procedure</b> <b>ClearWindow</b>; - очищает графическое окно белым цветом.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>ClearWindow</b>(c: ColorType); - очищает графическое окно цветом c.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>WindowWidth</b>: integer; - возвращает ширину графического окна.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>WindowHeight</b>: integer; - возвращает высоту графического окна.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>WindowLeft</b>: integer; - возвращает отступ графического окна от левого края экрана.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>WindowTop</b>: integer; - возвращает отступ графического окна от верхнего края экрана.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>WindowCaption</b>: string; - возвращает заголовок графического окна.<br><br>
+                
+                <b style="color: #3D9BE8;">procedure</b> <b>SetWindowWidth</b>(w: integer); - устанавливает ширину графического окна.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetWindowHeight</b>(h: integer); - устанавливает высоту графического окна.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetWindowLeft</b>(l: integer); - устанавливает отступ графического окна от левого края экрана.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetWindowTop</b>(t: integer); - устанавливает отступ графического окна от верхнего края экрана.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetWindowSize</b>(w,h: integer); - устанавливает ширину и высоту графического окна.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetWindowPos</b>(l,t: integer); - устанавливает отступ графического окна от левого и верхнего края экрана.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetWindowCaption</b>(s: string); - устанавливает заголовок графического окна.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetWindowTitle</b>(s: string); - устанавливает заголовок графического окна. Синоним <b>SetWindowCaption</b><br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SaveWindow</b>(fname: string); - заполняет графическое окно мозаикой из рисунка, содержащегося в файле с именем fname.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>FillWindow</b>(n: integer); - заполняет графическое окно мозаикой из рисунка с описателем n.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>CloseWindow</b>; - закрывает графическое окно.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>ScreenWidth</b>: integer; - возвращает ширину экрана.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>ScreenHeight</b>: integer; - возвращает высоту экрана.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>CenterWindow</b>; - центрирует графическое окно по центру экрана.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>MaximizeWindow</b>; - максимизирует графическое окно на экране.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>NormalizeWindow</b>; - восстанавливает положение графического окна на экране.<br><br>
+
+                Все размеры устанавливаются и возвращаются в пикселях.<br><br>
+            </span><br><br>
+
+            <span class="s3" id="7">Задание(определение) режимов вывода</span>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                <b style="color: #3D9BE8;">procedure</b> <b>SetDrawingSurface</b>(n: integer); - устанавливает в качестве канвы для рисования рисунок с описателем n. В результате весь графический вывод осуществляется не на экран, а на рисунок; настройки кисти, пера и шрифта также осуществляются для рисунка.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetDrawingSurface</b>(p: Picture); - устанавливает в качестве канвы для рисования рисунок с описателем n. В результате весь графический вывод осуществляется не на экран, а на рисунок; настройки кисти, пера и шрифта также осуществляются для рисунка.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>RestoreDrawingSurface</b>; - устанавливает в качестве канвы для рисования графическое окно.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Redraw</b>; - осуществляет перерисовку окна вывода при заблокированном выводе в графическое окно.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>LockDrawing</b>; - блокирует вывод в графическое окно, осуществляя рисование только во внеэкранном буфере. Для перерисовки графического окна требуется вызвать процедуру Redraw. Если графический вывод перенаправлен в рисунок вызовом процедуры SetDrawingSurface, то не оказывает никакого воздействия на вывод.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>UnlockDrawing</b>; - снимает блокировку вывода в графическое окно.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>LockScreenBuffer</b>; - блокирует вывод во внеэкранный буфер графического окна. После вызова этой процедуры рисование незначительно ускоряется, однако, изображение графического окна перестает восстанавливаться.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>UnlockScreenBuffer</b>; - снимает блокировку вывода во внеэкранный буфер графического окна.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>DrawingIsLocked</b>: boolean; - возвращает True, если вывод в графическое окно заблокирован, и False в противном случае.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetRedrawProc</b>(<b style="color: #3D9BE8;">procedure</b> <b>RedrawProc</b>); - устанавливает пользовательскую процедуру для перерисовки содержимого графического окна, вызываемую автоматически в тот момент, когда требуется его перерисовка. В настоящее время используется в модуле ABCObjects для автоматической перерисовки всех графических объектов и фона.<br><br>
+
+                Блокировка вывода в графическое окно с последующим вызовом <b>Redraw</b> используется для простейшего создания анимации без мерцания.<br><br><br><br>
+
+                Как можно было догадаться, что это не все команды от модуля <b>GraphABC</b>, но их будет достаточно для ознакомления самого модуля.
+            </span>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="theme4.html" style="color: #42C0C7;">Предыдущая тема</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="theme6.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2021 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

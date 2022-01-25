@@ -1,0 +1,78 @@
+/*--------------------------top-container----------------------------*/
+
+@media (max-width: 10099.98px) {
+    .b2 {background: #FFDE5F;}
+}
+
+@media (max-width: 695.98px) {
+    .overlay ul li .i2 {color: #FFDE5F;}
+}
+
+/*--------------------------cent-container----------------------------*/
+
+@media (max-width: 10099.98px) {
+    .cent-container {border-radius: 20px 20px 0 0;}
+
+    .content {padding: 30px 5% 30px 5%;}
+  
+    .s1 {
+        font-size: 30px;
+        font-family: 'Arial', sans-serif;
+        color: #e0d434;
+    }
+  
+    .line {
+        width: 100%;
+        height: 3px;
+        background: #567B96;
+    }
+
+    .l1 {height: 2px;}
+
+    .s2 {
+        font-size: 18px;
+        font-family: 'Arial';
+        color: #fff;
+    }
+
+    .s3 {
+        padding-left: 15px;
+        font-size: 20px;
+        color: #e0d434;
+    }
+
+    .image {
+        width: 400px;
+        height: 230px;
+    }
+
+    blockquote {margin-left: 5%;}
+}
+
+@media (max-width: 787.98px) {
+    td {font-size: 16px;}
+}
+
+@media (max-width: 505.98px) {
+    .im1 {
+        width: 100%;
+        height: 75%;
+    }
+}
+
+@media (max-width: 695.98px) {
+    .s1 {font-size: 25px;}
+
+    .s2 {font-size: 16px;}
+}
+
+@media (max-width: 399.98px) {
+    .s2,
+    td {font-size: 14px;}
+}
+
+/*--------------------------bot-container----------------------------*/
+
+@media (max-width: 10099.98px) {
+    .content3 {padding: 20px 2% 20px 2%;}
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/tests/test15.css">
+    <title>Тест: Знакомство с исполнителем Чертежник | pascalbook</title>
+    <script>
+        function sbros() {x=document.forms[0].elements[7].value;for (i=1; i<=x; i++) {document.forms[i].reset();}}function step3() {var i=0;var j=0;var schet=0;var jm=document.forms[0].elements[7].value;var im=document.forms[0].elements[8].value;for (j=1; j<=jm; j++){for (i=0; i<im; i++){if (document.forms[j].R1[i].checked==true){schet++;}}};if (schet<jm){alert("Надо ответить на ВСЕ вопросы!");return;}eo=document.forms[0].elements[9].value;e=new Array();e=eo.split("/");sr=new Array(1.25,1.25,1.25,1.25,1.25,1.25,1.25,1.25,1.25,1.25,0);o=new Array();var r=0;var tp=3;var kr=5;var test=2;var ll=12.5;var osh=0;var text="";for (j=1; j<=jm; j++){for (i=0; i<im; i++){if (document.forms[j].R1[i].checked==true){o[j-1]=i*0.2+3;}}};for (j=0; j<jm; j++){if (o[j]==e[j+tp]){r=r+1*sr[j];}else{osh++;}};if (osh!=0){text="Ошибочных ответов - "+osh+"."}if (test==1){if (kr==0){sbros(); alert("Количество правильных ответов: "+r+" из "+jm+" возможных ("+Math.round(r*100/jm)+"%).");}else{sbros(); alert("Набрано баллов: "+(r*100)+" из "+(ll*100)+" возможных ("+Math.round(r*100/ll)+"%).");}}else{if (kr==0){alert("Количество правильных ответов: "+r+" из "+jm+" возможных ("+Math.round(r*100/jm)+"%).");}else{alert("Набрано баллов: "+(r*100)+" из "+(ll*100)+" возможных ("+Math.round(r*100/ll)+"%).\n"+text)}}}
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="../index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="../themes/theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="../tests/tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="#">Творческие проекты</a></li>
+				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="../index.html" class="shine-button b1">Главная</a>
+        <a href="../themes/theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="../tests/tests.html" class="shine-button b3">Тесты</a>
+        <a href="#" class="shine-button b4">Творческие проекты</a>
+        <a href="#" class="shine-button b5">Олимпиадные задания</a>
+        <a href="#" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Тест: Знакомство с исполнителем Чертежник</span>
+            <div class="line"></div><br>
+            <div class="question">
+                <form>
+                    <input type="hidden" value="2">
+                    <input type="hidden" value="Проверочная">
+                    <input type="hidden" value="Информатика">
+                    <input type="hidden" value="0">
+                    <input type="hidden" value="">
+                    <input type="hidden" value="1">
+                    <input type="hidden" value="0">
+                    <input type="hidden" value="10">
+                    <input type="hidden" value="4">
+                    <input type="hidden" value="15.2/3.2/3/3.4/3.6/3.2/3/3.4/3.4/3.2/3/3/3.4/3.2/3.4/3.2/">
+                </form>
+
+                <form>
+                    <b>&nbsp;1.</b> Исполнитель Чертежник предназначен для...
+                    <blockquote>
+                        <input type="radio" name="R1"><b> раскрашивания красками</b><br>
+                        <input type="radio" name="R1"><b> рисования карандашом</b><br>
+                        <input type="radio" name="R1"><b> построения рисунков и чертежей на плоскости с координатами</b><br>
+                        <input type="radio" name="R1"><b> построения трехмерной графики</b><br>
+                    </blockquote>
+                  </form>
+              
+                  <form>
+                    <b>&nbsp;2.</b> Исполнитель Чертежник имеет перо, которое он может...
+                    <blockquote>
+                        <input type="radio" name="R1"><b> передавать</b><br>
+                        <input type="radio" name="R1"><b> ломать</b><br>
+                        <input type="radio" name="R1"><b> перемещать</b><br>
+                        <input type="radio" name="R1"><b> поднимать, опускать и перемещать</b><br>
+                    </blockquote>
+                  </form>
+              
+                  <form>
+                    <b>&nbsp;3.</b> Если Чертежник опустит перо, то...
+                    <blockquote>
+                        <input type="radio" name="R1"><b> ничего не происходит</b><br>
+                        <input type="radio" name="R1"><b> за ним остается след</b><br>
+                        <input type="radio" name="R1"><b> оно поднимается снова</b><br>
+                        <input type="radio" name="R1"><b> потом его надо поднять</b><br>
+                    </blockquote>
+                  </form>
+              
+                  <form>
+                    <b>&nbsp;4.</b> Исполнитель Чертежник изображается...
+                    <blockquote>
+                        <input type="radio" name="R1"><b> маленьким квадратом</b><br>
+                        <input type="radio" name="R1"><b> огромным квадратом</b><br>
+                        <input type="radio" name="R1"><b> маленьким кружком</b><br>
+                        <input type="radio" name="R1"><b> огромным кругом</b><br>
+                    </blockquote>
+                  </form>
+              
+                  <form>
+                    <b>&nbsp;5.</b> Выберите верное утверждение:
+                    <blockquote>
+                        <input type="radio" name="R1"><b> Если перо опущено, исполнитель Чертежник изображается кругом большего размера</b><br>
+                        <input type="radio" name="R1"><b> Если перо опущено, исполнитель Чертежник изображается квадратом большего размера</b><br>
+                        <input type="radio" name="R1"><b> Если перо опущено, исполнитель Чертежник изображается квадратом меньшего размера</b><br>
+                        <input type="radio" name="R1"><b> Если перо опущено, исполнитель Чертежник изображается кругом меньшего размера</b><br>
+                    </blockquote>
+                  </form>
+              
+                  <form>
+                    <b>&nbsp;6.</b> Средой обитания исполнителя Чертежник является:
+                    <blockquote>
+                        <input type="radio" name="R1"><b> поле с цветочками</b><br>
+                        <input type="radio" name="R1"><b> поле с клеточками</b><br>
+                        <input type="radio" name="R1"><b> координатная плоскость</b><br>
+                        <input type="radio" name="R1"><b> шахматная доска</b><br>
+                    </blockquote>
+                  </form>
+              
+                  <form>
+                    <b>&nbsp;7.</b> Исходным положением пера исполнителя Чертёжник является:
+                    <blockquote>
+                        <input type="radio" name="R1"><b> поднятое перо</b><br>
+                        <input type="radio" name="R1"><b> поднятое перо над точкой (0,0)</b><br>
+                        <input type="radio" name="R1"><b> опущенное перо</b><br>
+                        <input type="radio" name="R1"><b> опущенное перо над точкой (0,0)</b><br>
+                    </blockquote>
+                  </form>
+              
+                  <form>
+                    <b>&nbsp;8.</b> Каковы координаты точек А и В?
+                    <blockquote>
+                        <img class="imag1" src="https://static.wixstatic.com/media/861550_ff330bd6ac834880b576d5f934eb6f6e~mv2.jpg/v1/fill/w_355,h_255,al_c,lg_1,q_80/pic7_JPG.webp" alt=""><br><br>
+                        <input type="radio" name="R1"><b> А(3,4), В(1,2)</b><br>
+                        <input type="radio" name="R1"><b> А(3,3), В(3,2)</b><br>
+                        <input type="radio" name="R1"><b> А(4,4), В(1,2)</b><br>
+                        <input type="radio" name="R1"><b> А(3,4), В(2,1)</b><br>
+                    </blockquote>
+                  </form>
+              
+                  <form>
+                    <b>&nbsp;9.</b> Основные команды исполнителя Чертежник - это...
+                    <blockquote>
+                        <input type="radio" name="R1"><b> ToPoint(x,y), PenUp, PenDown</b><br>
+                        <input type="radio" name="R1"><b> Точка(х,у), Поднять_Перо, Опустить_Перо</b><br>
+                        <input type="radio" name="R1"><b> Рисовать(х,у), Стереть(х,у)</b><br>
+                        <input type="radio" name="R1"><b> Point(x,y), Up, Down</b><br>
+                    </blockquote>
+                  </form>
+              
+                  <form>
+                    <b>&nbsp;10.</b> Имя программы - это...
+                    <blockquote>
+                        <input type="radio" name="R1"><b> любая последовательность русских букв и цифр, начинающаяся с цифры</b><br>
+                        <input type="radio" name="R1"><b> любая последовательность латинских букв и цифр, начинающаяся с цифры</b><br>
+                        <input type="radio" name="R1"><b> любая последовательность латинских букв и цифр, начинающаяся с буквы</b><br>
+                        <input type="radio" name="R1"><b> любая последовательность русских букв и цифр, начинающаяся с буквы</b><br>
+                    </blockquote>
+                  </form><br>
+              
+                  <form>
+                      <p>
+                          <input type="button" class="but" value=" Проверить " onclick="step3()">
+                          <input type="button" class="but" value=" Очистить " onclick="sbros()">
+                      </p>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="test21.html" style="color: #42C0C7;">Предыдущий тест</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="test31.html" style="color: #42C0C7;">Следующий тест</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2021 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/tests/test15.css">
+    <title>Тест: Линейные алгоритмы. Целочисленная арифметика | pascalbook</title>
+    <script>
+        function check() {
+        myform=document.forms.test;
+        i=0;
+        if (myform.spirit0.value=="1") i++;
+        if (myform.spirit1.value=="16")i++;
+        if (myform.and000[2].checked)i++;
+        if ((myform.OR[0].checked)&&(myform.OR[2].checked)&&(myform.OR[3].checked)&&(!myform.OR[1].checked)&&(!myform.OR[4].checked))i++;
+        if (myform.an[1].checked)i++;
+            result=(myform.spirit0.value=="1")&&(myform.spirit1.value=="16")&&(myform.and000[2].checked)&&(myform.OR[0].checked)&&(myform.OR[2].checked)&&(myform.OR[3].checked)
+            &&(!myform.OR[1].checked)&&(!myform.OR[4].checked)&&(myform.an[1].checked)?
+            /*"Правильно!" : "кое-что или все Неправильно :-(" ; 
+            alert("Результат проверки учащегося  "+myform.author.value+":  "+result+" Ваша оценка: " +i*2);*/
+            "Правильно!" : "Неправильно :-(" ; 
+            alert("Результат проверки: "+result+"\nВаша оценка: "+i*2);    
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="../index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="../themes/theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="../tests/tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="#">Творческие проекты</a></li>
+				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="../index.html" class="shine-button b1">Главная</a>
+        <a href="../themes/theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="../tests/tests.html" class="shine-button b3">Тесты</a>
+        <a href="#" class="shine-button b4">Творческие проекты</a>
+        <a href="#" class="shine-button b5">Олимпиадные задания</a>
+        <a href="#" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Тест: Линейные алгоритмы. Целочисленная арифметика</span>
+            <div class="line"></div><br>
+            <div class="question">
+                <form name="test">
+                    <b>&nbsp;1.</b> Какой результат получится после выполнения следующего алгоритма:
+                    <blockquote>
+                        <div class="code">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>program </b><w>zadacha6_1;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>var </b><w>n, k, d, b: real;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>begin</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;n:=5;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;k:=2;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;d:=24;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;b:=(sqr(k)+4*n)/d;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;writeln(b);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>end</b><w>.</w></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><br>
+                        <input type="radio" name="and000"><b> 1290</b><br>
+                        <input type="radio" name="and000"><b> 16</b><br>
+                        <input type="radio" name="and000"><b> 0</b><br>
+                        <input type="radio" name="and000"><b> 90</b><br>
+                    </blockquote>
+            
+                    <b>&nbsp;2.</b> Вычислите результат выполнения следующего алгоритма:
+                    <blockquote>
+                        <input type="text" name="spirit0" class="spirit0">
+                    </blockquote>
+            
+                    <b>&nbsp;3.</b> Найдите значения следующих выражений: 
+                    <blockquote>
+                        22 div 7<br>
+                        17 div (30 mod 8)<br>
+                        32 mod (14 div 6)<br><br>
+                        <input type="checkbox" name="OR"><b> 0</b><br>
+                        <input type="checkbox" name="OR"><b> 1</b><br>
+                        <input type="checkbox" name="OR"><b> 2</b><br>
+                        <input type="checkbox" name="OR"><b> 3</b><br>
+                        <input type="checkbox" name="OR"><b> 4</b><br>
+                    </blockquote>
+            
+                    <b>&nbsp;4.</b> Выберите верное равенство:
+                    <blockquote>
+                        <input type="radio" name="an"><b> (1608 div 100) div 10 = 1608 div 10000</b><br>
+                        <input type="radio" name="an"><b> (264 mod 100) div 10 = (368 div 10) mod 10</b><br>
+                        <input type="radio" name="an"><b> (2574 mod 1000) div 100 = (2574 div 1000) mod 100</b><br>
+                    </blockquote>
+            
+                    <b>&nbsp;5.</b> Какой результат будет выведен в процессе выполнения программы:
+                    <blockquote>
+                        <div class="code">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>program </b><w>zadacha6_2;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>var </b><w>n, n1, n2, n3, n4, sum:</w><b> integer</b><w>;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>begin</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;n:=4682;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;n1:=n</w><b> div </b><w>1000;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;n2:=(n</w><b> div </b><w>100)</w><b> mod </b><w>10;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;n3:=(n</w><b> div </b><w>10)</w><b> mod </b><w>10;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;n4:=n</w><b> mod </b><w>10;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;sum:=n2+n3+n4;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;writeln(sum);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>11.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>end</b><w>.</w></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><br>
+                        <input type="text" name="spirit1" class="spirit1">
+                    </blockquote><br>
+            
+                    <input name="send" type="button" value=" Проверить " class="send" onclick="check()">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="test18.html" style="color: #42C0C7;">Предыдущий тест</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="test110.html" style="color: #42C0C7;">Следующий тест</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2021 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

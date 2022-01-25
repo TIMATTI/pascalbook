@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/themes/theme6.css">
+    <title>Тема: Массив | pascalbook</title>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="../index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="../themes/theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="../tests/tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="#">Творческие проекты</a></li>
+				    <li><a class="nav-item i5" href="#">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="#">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="../index.html" class="shine-button b1">Главная</a>
+        <a href="../themes/theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="../tests/tests.html" class="shine-button b3">Тесты</a>
+        <a href="#" class="shine-button b4">Творческие проекты</a>
+        <a href="#" class="shine-button b5">Олимпиадные задания</a>
+        <a href="#" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Тема: Массив</span><br>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                <b style="color: #FFDE5F;">Массивы</b> - это совокупности однотипных элементов.<br>
+                <b style="color: #FFDE5F;">Характеризуются</b> они следующим:
+                <ul>
+                    <li><b>Каждый компонент массива может быть явно обозначен и к нему имеется прямой доступ;</b></li>
+                    <li><b>Число компонент массива определяется при его описании и в дальнейшем не меняется.</b></li>
+                </ul>
+
+                Для обозначения <b style="color: #FFDE5F;">компонент массива</b> используется: 
+                <ul>
+                    <li><b>Имя массива - это переменная(она не должна повторяться с другими переменными в программе), которая используется для обозначения массива. Обычно обозначается латинскими буквами. Числа использовать для обозначения массива НЕЛЬЗЯ;</b></li>
+                    <li><b>Индекс - это переменная, которая присваивает(номерует) введённое значение в массиве.</b></li>
+                </ul>
+
+                <b style="color: #FFDE5F;">Тип индекса</b> может быть только порядковым (кроме longint). Чаще всего используется интервальный тип (диапазон).<br><br> 
+                
+                <b style="color: #FFDE5F;">Описание типа массива</b> задается следующим образом:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w style="font-style: italic">имя типа = </w><b style="color: #fff;">array</b><w>[<w style="font-style: italic">список индексов</w>]</w><b> of </b><w><w style="font-style: italic">тип</w>;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+                
+                Пояснение:
+                <ul>
+                    <li><n style="font-style: italic;">имя типа</n> - правильный идентификатор;</li>
+                        <li><n style="font-style: italic;">список индексов</n> - список одного или нескольких индексных типов, разделенных запятыми;</li>
+                        <li><n style="font-style: italic;">тип</n> - любой тип данных.</li>
+                </ul>
+                
+                Определить переменную как массив можно при ее описании, без предварительного описания типа массива, например:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>var </b><w>a, b, c: </w><b style="color: #fff;">array</b><w>[1..5]</w><b> of </b><w>integer;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                Вводить и выводить массивы можно только поэлементно.<br><br>
+
+                <b style="color: #FFDE5F; font-style: italic;">Пример 1:</b> Ввод и вывод одномерного массива.
+                <blockquote>
+                    <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>program </b><w>zadacha5_1;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>var</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;a: </w><b style="color: #fff;">array</b><w>[1..10] </w><b>of </b><w>integer;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;i: byte;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>begin</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;writeln(</w><g>'Введите элементы массива:'</g><w>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;for </b><w>i:=1 </w><b>to </b><w>10 </w><b>do </b><w>readln(a[i]);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;writeln(</w><g>'Вывод элементов массива:'</g><w>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;for </b><w>i:=1 </w><b>to </b><w>10 </w><b>do </b><w>writeln(a[i]);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>end</b><w>.</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                </blockquote>
+
+                В этом примере показано, как правильно инициализировать(описать) массив, заполнить его и вывести введённые значения.<br><br>
+
+                Если массивы a и b описаны как:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>var</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w>a: </w><b style="color: #fff;">array</b><w>[1..10]</w><b> of </b><w>integer;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<w>b: </w><b style="color: #fff;">array</b><w>[1..10]</w><b> of </b><w>integer;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                То переменные "<b>a</b>" и "<b>b</b>" считаются разных типов. Для обеспечения совместимости применяйте описание переменных через предварительное описание типа.<br><br>
+
+                Если типы массивов идентичны, то в программе один массив может быть присвоен другому. В этом случае значения всех переменных одного массива будет присвоены соответствующим элементам второго массива.<br><br>
+
+                Вместе с тем, над массивами не определены операции отношения. Сравнивать два массива можно только поэлементно.<br><br>
+
+                Так как <n style="font-style: italic;">тип</n>, идущий за ключевым словом "<b style="color: #3D9BE8;">of</b>" в описании массива, - любой тип <b>Pascal ABC</b>, то он может быть и другим массивом. Например:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>var </b><w>a: </w><b style="color: #fff;">array</b><w>[1..5]</w><b> of </b><b style="color: #fff;">array</b><w>[1..10] </w><b> of </b><w>integer;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                Такую запись можно заменить более компактной:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>var </b><w>a: </w><b style="color: #fff;">array</b><w>[1..5, 1..10]</w><b> of </b><w>integer;</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                Таким образом возникает <b style="color: #FFDE5F;">понятие многомерного массива</b>. Глубина вложенности массивов произвольная, поэтому количество элементов в списке индексных типов (размерность массива) не ограничена, однако не может быть более <b>65520</b> байт.<br><br>
+
+                Работа с многомерными массивами почти всегда связана с организацией вложенных циклов. Так, чтобы <b style="color: #FFDE5F;">заполнить двумерный массив</b> (матрицу) случайными числами, используют конструкцию вида:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>for </b><w>i:=1</w><b> to </b><w>5</w><b> do </b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;for </b><w>j:=1</w><b> to </b><w>5</w><b> do </b><w>a[i,j]:=random(10);</w>&nbsp;&nbsp;&nbsp;<c>//функция выводящая числа в любом порядке от 1 до 10</c></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                О функциях будет подробно расписано в теме <a style="color: #42C0C7; font-family: 'Arial', sans-serif;" href="theme11.html">Процедуры и функции</a>.<br><br>
+
+                Для вывода матрицы на экран можно использовать такой цикл:<br>
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>for </b><w>i:=1</w><b> to </b><w>5</w><b> do </b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;for </b><w>j:=1</w><b> to </b><w>5</w><b> do begin</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>write(a[i,j],<g>'&nbsp;&nbsp;'</g>);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>if </b><w>(j=5)</w><b> then </b><w>writeln;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;<b>end</b><w>;</w></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div><br>
+
+                <n style="font-style: italic;">Проанализируйте данный отрывок кода. Почему он удобен?</n>
+            </span>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="theme8.html" style="color: #42C0C7;">Предыдущая тема</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="theme10.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2021 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
