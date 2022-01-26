@@ -7,7 +7,7 @@ body {background: #567B96;}
 
 @font-face {
     font-family: 'Comic Sans MS';
-    src: url("2006.ttf");
+    src: url("../2006.ttf");
 }
 
 /*--------------------------top-container----------------------------*/
@@ -392,14 +392,14 @@ body {background: #567B96;}
 
     td {
         font-size: 18px;
-        color: #2732c0;
+        color: #14598d;
     }
 
-    g {color: #087ac5}
+    g {color: #0f7f91}
 
     w {color: #fff}
 
-    c {color: #42d300}
+    c {color: #409b16}
 }
 
 @media (max-width: 1699.98px) {

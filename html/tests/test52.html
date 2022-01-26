@@ -6,21 +6,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/tests/test15.css">
-    <title>Тест: Условный оператор if | pascalbook</title>
+    <title>Тест: Оператор повторения while | pascalbook</title>
     <script>
         function check() {
             myform=document.forms.test;
             i=0;
-            if (myform.spirit0.value=="0") i++;
+            if (myform.spirit0.value=="35") i++;
             if (myform.spirit1.value=="16")i++;
-            if (myform.and000[1].checked)i++;
-            if ((myform.OR[0].checked)&&(myform.OR[1].checked)&&(myform.OR[3].checked)&&(!myform.OR[4].checked)&&(!myform.OR[2].checked))i++;
-            if (myform.an[1].checked)i++;
-                result=(myform.spirit0.value=="0")&&(myform.spirit1.value=="16")&&(myform.and000[1].checked)&&(myform.OR[0].checked)&&(myform.OR[1].checked)&&(myform.OR[3].checked)&&(!myform.OR[2].checked)&&(!myform.OR[4].checked)&&(myform.an[1].checked)?
-                /*"Правильно!" : "кое-что или все Неправильно :-(" ; 
-                alert("Результат проверки учащегося  "+myform.author.value+":  "+result+" Ваша оценка: " +i*2);*/
-                "Правильно!" : "кое-что или все Неправильно :-(" ; 
-                alert("Результат проверки: "+result+"\nВаша оценка: "+i*2);    
+            if (myform.and000[2].checked)i++;
+            if ((myform.OR[0].checked)&&(myform.OR[1].checked)&&(!myform.OR[3].checked)&&(!myform.OR[2].checked)&&(!myform.OR[4].checked))i++;
+            if (myform.an[2].checked)i++;
+            result=(myform.spirit0.value=="35")&&(myform.spirit1.value=="16")&&(myform.and000[2].checked)&&(myform.OR[0].checked)&&(myform.OR[1].checked)&&(myform.OR[3].checked)&&(!myform.OR[2].checked)&&(!myform.OR[4].checked)&&(myform.an[2].checked)?
+            "Правильно!" : "кое-что или все Неправильно :-(" ; 
+            alert("Результат проверки учащегося: "+result+"\nВаша оценка: "+i*2);          
         }
     </script>
 </head>
@@ -59,110 +57,108 @@
     </div>
     <div class="cent-container mt-0 mb-0">
         <div class="content">
-            <span class="s1">Тест: Условный оператор if</span>
+            <span class="s1">Тест: Оператор повторения while</span>
             <div class="line"></div><br>
             <div class="question">
                 <form name="test">
-                    <b>&nbsp;1.</b> Выбери правильный вариант ответа. Полная форма условного оператора имеет следующий вид:
-                    <blockquote>
-                        <input type="radio" name="and000">
-                        <div class="code mode">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>if </b><w><условие></w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>then </b><w><команда 1></w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>else </b><w><команда 2></w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>else </b><w><команда 3></w></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><br>
-                        <input type="radio" name="and000">
-                        <div class="code mode">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>if </b><w><условие></w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>then </b><w><команда 1></w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>else </b><w><команда 2></w></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><br>
-                        <input type="radio" name="and000">
-                        <div class="code mode">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>if </b><w><условие></w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>then </b><w><команда 1></w></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><br>
-                        <input type="radio" name="and000">
-                        <div class="code mode">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>if </b><w><условие></w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>else </b><w><команда 1></w></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><br>
-                    </blockquote>
-            
-                    <b>&nbsp;2.</b> Рассмотрите фрагмент программы. Чему будет равно s:
+                    <b>&nbsp;1.</b> Какой результат получится после выполнения следующего алгоритма:
                     <blockquote>
                         <div class="code">
                             <table>
                                 <tbody>
                                     <tr>
                                         <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>k:=5;</w></td>
+                                        <td><b>program </b><w>zadacha12_1;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>if </b><w>(k</w><b> div </b><w>4>2)</w></td>
+                                        <td><b>var </b><w>i,s:</w><b> integer</b><w>;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>then </b><w>s:=k</w></td>
+                                        <td><b>begin</b></td>
                                     </tr>
                                     <tr>
                                         <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>else </b><w>s:=0;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;s:=0; i:=0;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>writeln(s);</w></td>
+                                        <td><b>&nbsp;&nbsp;&nbsp;while </b><w>(i<5)</w><b> do begin</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inc(i);</w>&nbsp;&nbsp;&nbsp;<c>//функция увеличивающая значение переменной i на единицу</c></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s+=i*2;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>&nbsp;&nbsp;&nbsp;end</b><w>;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;writeln(s);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>end</b><w>.</w></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><br>
+                        <input type="radio" name="and000"><b> 0</b><br>
+                        <input type="radio" name="and000"><b> 5</b><br>
+                        <input type="radio" name="and000"><b> 10</b><br>
+                        <input type="radio" name="and000"><b> 30</b><br>
+                    </blockquote>
+            
+                    <b>&nbsp;2.</b> Определите значение переменной s после выполнения программы:
+                    <blockquote>
+                        <div class="code">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>program </b><w>zadacha12_2;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>var </b><w>i,s:</w><b> integer</b><w>;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>begin</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;s:=0; i:=10;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>&nbsp;&nbsp;&nbsp;while </b><w>(i>5)</w><b> do begin</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dec(i);</w>&nbsp;&nbsp;&nbsp;<c>//функция уменьшающая значение переменной i на единицу</c></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s+=i;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>&nbsp;&nbsp;&nbsp;end</b><w>;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;writeln(s);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>end</b><w>.</w></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -170,114 +166,18 @@
                         <input type="text" autocomplete="off" name="spirit0" class="spirit0">
                     </blockquote>
             
-                    <b>&nbsp;3.</b> Рассмотрите фрагмент программы. Чему будут равны x,y,d после выполнения данного фрагмента:
+                    <b>&nbsp;3.</b> Данный алгоритм предназначен для того, чтобы определить:
                     <blockquote>
                         <div class="code">
                             <table>
                                 <tbody>
                                     <tr>
                                         <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>x:=5;</w></td>
+                                        <td><b>program </b><w>zadacha12_3;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>y:=19;</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>if </b><w>(x>y)</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>then </b><w>d:=x+4</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;<b>else </b><w>d:=y-7;</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>writeln(x);</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>writeln(y);</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>writeln(d);</w></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><br>
-                        <input type="checkbox" name="OR"><b> 5</b><br>
-                        <input type="checkbox" name="OR"><b> 19</b><br>
-                        <input type="checkbox" name="OR"><b> 9</b><br>
-                        <input type="checkbox" name="OR"><b> 12</b><br>
-                        <input type="checkbox" name="OR"><b> алгоритм не выполнится</b><br>
-                    </blockquote>
-            
-                    <b>&nbsp;4.</b> Чему будет равно r после выполнения программы:
-                    <blockquote>
-                        <div class="code">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>program </b><w>zadacha9_1;</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>var </b><w>a:</w><b> integer</b><w>;</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>r:</w><b> string</b><w>;</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>begin</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>&nbsp;&nbsp;&nbsp;if </b><w>(a</w><b> mod </b><w>4=0)</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>then </b><w>r:=<g>'число кратно 4'</g></w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>else </b><w>r:=<g>'число не кратно 4'</g>;</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>&nbsp;&nbsp;&nbsp;writeln(r);</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>end</b><w>.</w></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><br>
-                        <input type="radio" name="an"><b> число кратно 4</b><br>
-                        <input type="radio" name="an"><b> число не кратно 4</b><br>
-                        <input type="radio" name="an"><b> алгоритм не выполнится</b><br>
-                    </blockquote>
-            
-                    <b>&nbsp;5.</b> Какой результат будет выведен в процессе выполнения программы:
-                    <blockquote>
-                        <div class="code">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>program </b><w>zadacha9_2;</w></td>
-                                    </tr>
-                                    <tr>
-                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>var </b><w>chislo, m, n, p, w:</w><b> integer</b><w>;</w></td>
+                                        <td><b>var </b><w>n,s,c,k:</w><b> integer</b><w>;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
@@ -285,44 +185,136 @@
                                     </tr>
                                     <tr>
                                         <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>&nbsp;&nbsp;&nbsp;chislo:=379;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;s:=0; k:=0;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>&nbsp;&nbsp;&nbsp;m:=chislo</w><b> mod </b><w>10;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;readln(n);</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>&nbsp;&nbsp;&nbsp;n:=(chislo</w><b> div </b><w>10)</w><b> mod </b><w>10;</w></td>
+                                        <td><b>&nbsp;&nbsp;&nbsp;while </b><w>(n>0)</w><b> do begin</b></td>
                                     </tr>
                                     <tr>
                                         <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>&nbsp;&nbsp;&nbsp;p:=chislo</w><b> div </b><w>100;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c:=n</w><b> mod </b><w>10;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><b>&nbsp;&nbsp;&nbsp;if </b><w>(m+n>10)</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s+=c;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>then </b><w>w:=m+n</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inc(k);</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>else </b><w>w:=p;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n:=n</w><b> div </b><w>10;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>11.&nbsp;&nbsp;&nbsp;</w></td>
-                                        <td><w>&nbsp;&nbsp;&nbsp;writeln(w);</w></td>
+                                        <td><b>&nbsp;&nbsp;&nbsp;end</b><w>;</w></td>
                                     </tr>
                                     <tr>
                                         <td><w>12.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;writeln(k);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>13.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;writeln(s);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>14.&nbsp;&nbsp;&nbsp;</w></td>
                                         <td><b>end</b><w>.</w></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div><br>
-                        <input type="text" name="spirit1" class="spirit1">
+                        <input type="checkbox" name="OR"><b> количество цифр числа</b><br>
+                        <input type="checkbox" name="OR"><b> сумму цифр числа</b><br>
+                        <input type="checkbox" name="OR"><b> младшую и старшую цифры числа</b><br>
+                        <input type="checkbox" name="OR"><b> есть ли в записи числа цифра "5"</b><br>
+                        <input type="checkbox" name="OR"><b> является ли данное число простым</b><br>
+                    </blockquote>
+            
+                    <b>&nbsp;4.</b> Для какого начального значения переменной х завершится выполнение оператора цикла:
+                    <blockquote>
+                        <div class="code">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>program </b><w>zadacha12_4;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>var </b><w>x:</w><b> real</b><w>;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>begin</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;readln(x);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>&nbsp;&nbsp;&nbsp;while </b><w>(x<1.3)</w><b> do </b><w>x:=sqr(x);</w><c>&nbsp;&nbsp;&nbsp;//x:=x*x;</c></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;writeln(x);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>end</b><w>.</w></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><br>
+                        <input type="radio" name="an"><b> 0.5</b><br>
+                        <input type="radio" name="an"><b> 0.9</b><br>
+                        <input type="radio" name="an"><b> 1.1</b><br>
+                    </blockquote>
+            
+                    <b>&nbsp;5.</b> Установите, что будет выведено на экран в результате выполнения следующей программы:
+                    <blockquote>
+                        <div class="code">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>program </b><w>zadacha12_5;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>var </b><w>x,n:</w><b> integer</b><w>;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>begin</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;n:=2;</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>&nbsp;&nbsp;&nbsp;while </b><w>(n<=10)</w><b> do </b><w>n:=sqr(n);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><w>&nbsp;&nbsp;&nbsp;writeln(n);</w></td>
+                                    </tr>
+                                    <tr>
+                                        <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                                        <td><b>end</b><w>.</w></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><br>
+                        <input type="text" autocomplete="off" name="spirit1" class="spirit1">
                     </blockquote><br>
             
                     <input name="send" type="button" value=" Проверить " class="send" onclick="check()">
@@ -333,8 +325,8 @@
     <div class="cent-cont mt-0 mb-0">
         <div class="content2">
             <div class="line"></div>
-            <span class="left" style="color: #42C0C7;">←<a href="test31.html" style="color: #42C0C7;">Предыдущий тест</a></span>
-            <span class="right" style="color: #42C0C7;"><a href="test42.html" style="color: #42C0C7;">Следующий тест</a>→</span>
+            <span class="left" style="color: #42C0C7;">←<a href="test51.html" style="color: #42C0C7;">Предыдущий тест</a></span>
+            <span class="right" style="color: #42C0C7; visibility: hidden;"><a href="test52.html" style="color: #42C0C7;">Следующий тест</a>→</span>
         </div>
     </div>
     <div class="bot-container mt-3 mb-4">
