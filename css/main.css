@@ -137,7 +137,7 @@ body {background: #567B96;}
 
     .b2,
     .b4,
-    .b6 {margin: 0px 5px;}
+    .b6 {margin: 0px 4px;}
 
     .fox {margin-left: 75px;}
 
@@ -160,12 +160,12 @@ body {background: #567B96;}
 
     .b1 {
         margin: 15px 0px;
-        margin-left: 6px;
+        margin-left: 8px;
     }
 
     .b2,
     .b4,
-    .b6 {margin: 0px 3px;}
+    .b6 {margin: 0px 4px;}
 
     .fox {
         margin-top: -20px;
