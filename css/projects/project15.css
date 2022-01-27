@@ -48,8 +48,12 @@
     
 }
 
+@media (max-width: 991.98px) {
+    .im5 {width: 85%;}
+}
+
 @media (max-width: 787.98px) {
-    
+    .im4 {width: 85%;}
 }
 
 @media (max-width: 695.98px) {
