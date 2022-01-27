@@ -137,7 +137,7 @@ body {background: #567B96;}
 
     .b2,
     .b4,
-    .b6 {margin: 0px 4px;}
+    .b6 {margin: 0px 5px;}
 
     .fox {margin-left: 75px;}
 
@@ -145,6 +145,14 @@ body {background: #567B96;}
         width: 390px;
         margin-left: 310px;
     }
+}
+
+@media (max-width: 839.98px) {
+    .b1 {margin-left: 11px;}
+
+    .b2,
+    .b4,
+    .b5 {margin: 0px 4px;}
 }
 
 @media (max-width: 787.98px) {
