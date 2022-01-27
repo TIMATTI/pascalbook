@@ -1,0 +1,24 @@
+program ruchka;
+  uses graphabc;
+begin
+  setwindowsize (640,480);
+  setwindowtitle ('Ручка');
+  setpencolor (clbrown);
+  setpenwidth (2);
+  line(180,50,180,220);
+  line(180,195,200,195);
+  line(180,220,180,245);
+  line(180,245,200,220);
+  lineto(200,50);
+  line(180,220,200,220);
+  line(182,50,182,45);
+  line(182,45,210,45);
+  lineto(210,100);
+  lineto(205,100);
+  lineto(200,50);
+  lineto(205,50);
+  line(180,50,210,50);
+  setfontcolor(clteal);
+  setfontstyle(fsbold);
+  textout (20,20,'Моя ручка!');
+end.

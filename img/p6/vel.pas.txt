@@ -1,0 +1,35 @@
+program velik;
+  uses graphabc;
+begin
+  setwindowsize (640,480);
+  setwindowtitle ('Велосипед');
+  setpencolor (clblack);
+  setpenwidth (4);
+  circle(200,150,30);
+  circle(200,150,23);
+  circle(330,150,30);
+  circle(330,150,23);
+ line(200,150,280,150);
+  lineto(320,110);
+  lineto(210,110);
+  lineto(250,150);
+ line(200,150,210,110);
+  circle(200,150,5);
+  circle(270,150,10);
+ line(270,150,270,170);
+ line(265,170,275,170);
+ line(200,145,270,140);
+ line(200,155,270,160);
+line(330,150,320,110);
+ line(320,110,320,98);
+ lineto(310,98);
+ line(210,110,210,100);
+ circle(210,100,5);
+ line(210,100,220,100);
+ line(270,150,270,130);
+line(265,130,275,130);
+
+  setfontcolor(clred);
+  setfontstyle(fsbold);
+  textout (20,20,'А у тебя есть свой транспорт?');
+end.

@@ -427,10 +427,16 @@ body {background: #567B96;}
         width: 480px;
         margin-top: -40px;
     }
+
+    td {width: 16px;}
 }
 
 @media (max-width: 505.98px) {
     .cent-container {width: 100%;}
+}
+
+@media (max-width: 505.98px) {
+    td {font-size: 14px;}
 }
 
 /*--------------------------cent-cont----------------------------*/

@@ -1,0 +1,23 @@
+program budik;
+  uses graphabc;
+begin
+  setwindowsize (640,480);
+  setwindowtitle ('Будильник');
+  setpencolor (clgreen);
+  setpenwidth (4);
+  circle(250,180,60);
+  circle(270,180,60);
+  circle(210,235,7);
+  circle(310,235,7);
+  circle(270,180,7);
+  circle(260,115,10);
+ line(270,180,270,140);
+  line(270,180,280,150);
+   circle(270,230,5);
+    circle(270,130,5);
+    circle(240,180,5);
+    circle(310,180,5);
+  setfontcolor(clblue);
+  setfontstyle(fsbold);
+  textout (20,20,'Мой будильник!');
+end.

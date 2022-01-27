@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/projects/project15.css">
-    <title>Пример: Три равных квадрата | pascalbook</title>
+    <title>Задача: Использование линейных алгоритмов в исполнителе Чертёжник | pascalbook</title>
 </head>
 <body>
     <div class="container">
@@ -43,13 +43,133 @@
     </div>
     <div class="cent-container mt-0 mb-0">
         <div class="content">
-            <span class="s1">Пример: Три равных квадрата</span><br>
+            <span class="s1">Задача: Использование линейных алгоритмов в Чертёжник</span><br>
             <div class="line l1"></div><br>
             <span class="s2">
-                Использование процедуры для рисования 3-х одинаковых квадратов исполнителем Чертежник. Решим задачу с помощью функции <b>OnVector</b>. <b>OnVector</b>(a,b) – перемещает перо Чертежника на вектор (a,b).<br><br>
-                <img src="../../img/p1/proced1.gif"><br><br>
+                <b style="color: #FFDE5F;">Алгоритмы</b>, в которых команды выполняются последовательно одна за другой, в порядке их записи, называются <b style="color: #FFDE5F;">линейными</b>.<br><br>
 
-                
+                <b style="color: #FFDE5F; font-style: italic;">Пример 1:</b> Написать алгоритм получения изображения цифры 6 в почтовом индексе  с помощью исполнителя Чертежник.<br>
+
+                <img src="../../img/p1/chert21.gif" alt=""><br><br>
+
+                Выберем следующий <b style="color: #FFDE5F;">алгоритм построения изображения</b>:
+                <ol>
+                    <li>создать поле для исполнителя Чертежник размером 3х4 (3 клетки по горизонтали, 4 клетки по вертикали);</li>
+                    <li>сместиться в точку (2, 3);</li>
+                    <li>опустить перо;</li>
+                    <li>изобразить цифру, двигаясь через точки 1 — 2 — 3 — 4 — 5 — 2;</li>
+                    <li>поднять перо и перейти в начало координат.</li>
+                </ol><br>
+
+                Вот и сам код:
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>program </b><w>PR1;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>uses </b><w>Drawman;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;begin</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>field(3,4);</w><c>&nbsp;&nbsp;&nbsp;//размер поля</c></td>
+                        </tr>
+                        <tr>
+                            <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>topoint(2,3);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>pendown;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>topoint(1,2);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>8.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>topoint(1,1);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>9.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>topoint(2,1);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>10.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>topoint(2,2);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>11.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>topoint(1,2);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>12.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>penup;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>13.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>topoint(0,0);</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>14.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>&nbsp;&nbsp;&nbsp;end</b><w>.</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br><br><br>
+
+                <div class="line l1"></div><br>
+                <b style="color: #FFDE5F;">Задачи для самостоятельного решения:</b>
+                <ol>
+                    <li>Нарисуйте на координатной плоскости результат исполнения следующего алгоритма:
+                        <div class="code">
+                            <table>
+                            <tbody>
+                                <tr>
+                                    <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>program </b><w>PR2;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>uses </b><w>Drawman;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>&nbsp;&nbsp;&nbsp;begin</b></td>
+                                </tr>
+                                <tr>
+                                    <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>field(10,10); topoint(5,1); pendown; topoint(5,2); topoint(2,2);</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>5.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>topoint(4,4); topoint(3,4); topoint(5,6); topoint(7,4);</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>6.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<w>topoint(6,4); topoint(8,2); topoint(5,2); penup;</w></td>
+                                </tr>
+                                <tr>
+                                    <td><w>7.&nbsp;&nbsp;&nbsp;</w></td>
+                                    <td><b>&nbsp;&nbsp;&nbsp;end</b><w>.</w></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div><br>
+                    </li>
+                    <li>Составьте программы для получения следующих изображений  с помощью исполнителя <b>Чертежник</b> и выполните их в системе программирования <b>Pascal ABC</b>:<br><br>
+                    a) <img class="im1" src="../../img/p1/ch3.jpg" alt=""><br><br>
+                    б) <img class="im1" src="../../img/p1/ch4.jpg" alt="">
+                    </li>
+                </ol>
+                </span>
             </span>
         </div>
     </div>
@@ -57,7 +177,7 @@
         <div class="content2">
             <div class="line"></div>
             <span class="left" style="color: #42C0C7; visibility: hidden;">←<a href="project1.html" style="color: #42C0C7;">Предыдущая тема</a></span>
-            <span class="right" style="color: #42C0C7;"><a href="../erorr.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+            <span class="right" style="color: #42C0C7;"><a href="project2.html" style="color: #42C0C7;">Следующая тема</a>→</span>
         </div>
     </div>
     <div class="bot-container mt-3 mb-4">

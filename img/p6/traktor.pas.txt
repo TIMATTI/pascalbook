@@ -1,0 +1,33 @@
+program traktor;
+  uses graphabc;
+begin
+  setwindowsize (400,300);
+  setwindowtitle ('Бульдозер');
+  setpencolor (clgreen);
+  setpenwidth (4);
+  rectangle(40,150,300,200);
+   rectangle(150,60,300,200);
+   rectangle(170,100,280,140);
+   line(40,210,50,200);
+line(290,200,300,210);
+   rectangle(80,110,100,150);
+
+  circle(70,230,20);
+  circle(70,230,10);
+  circle(110,230,20);
+  circle(110,230,10);
+   circle(150,230,20);
+  circle(150,230,10);
+  circle(190,230,20);
+  circle(190,230,10);
+  circle(230,230,20);
+  circle(230,230,10);
+  circle(270,230,20);
+ circle(270,230,10);
+ line(70,210,280,210);
+
+
+  setfontcolor(clred);
+  setfontstyle(fsbold);
+  textout (20,20,'В городе тaкой трактор встретить мало вероятно.');
+end.

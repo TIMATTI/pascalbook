@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/projects/project15.css">
+    <title>Задача: Рисуем окружности | pascalbook</title>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="../index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="../themes/theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="../tests/tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="../projects/projects.html">Творческие проекты</a></li>
+				    <li><a class="nav-item i5" href="../olimp/olimp.html">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="../erorr.html">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="../index.html" class="shine-button b1">Главная</a>
+        <a href="../themes/theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="../tests/tests.html" class="shine-button b3">Тесты</a>
+        <a href="../projects/projects.html" class="shine-button b4">Творческие проекты</a>
+        <a href="../olimp/olimp.html" class="shine-button b5">Олимпиадные задания</a>
+        <a href="../erorr.html" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Задача: Рисуем окружности</span><br>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                <b style="color: #FFDE5F;">Повторяем:</b><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Circle</b>(x,y,r: integer); - рисует окружность с центром в точке (x,y) и радиусом r.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>Ellipse</b>(x1,y1,x2,y2: integer); - рисует эллипс, заданный своим описанным прямоугольником с координатами противоположных вершин (x1,y1) и (x2,y2).<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetPenColor</b>(color: integer); - устанавливает цвет пера, задаваемый параметром color.<br><br>
+
+                <b style="color: #3D9BE8;">function</b> <b>PenColor</b>: integer; - возвращает текущий цвет пера.<br><br>
+
+                <b style="color: #3D9BE8;">procedure</b> <b>SetPenWidth</b>(w: integer); - - устанавливает ширину пера, равную w пикселам.<br><br>
+
+                <b style="color: #FFDE5F; font-style: italic;">Пример 1:</b> Нарисуем будильник.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="im2" src="../../img/p6/GraphA6.gif" alt=""><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: #FFDE5F; font-style: italic;">Пример 1:</b> <a style="color: #42C0C7;" href="../../img/p6/budik.pas.txt">Код программы</a>.<br><br>
+
+                <b style="color: #FFDE5F; font-style: italic;">Пример 2:</b> Нарисуем велосипед.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="im2" src="../../img/p6/GraphA7.gif" alt=""><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: #FFDE5F; font-style: italic;">Пример 2:</b> <a style="color: #42C0C7;" href="../../img/p6/vel.pas.txt">Код программы</a>.<br><br><br>
+
+                <b style="color: #FFDE5F; font-style: italic;">Пример 3:</b> Нарисуем велосипед.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="im2" src="../../img/p6/GraphA8.gif" alt=""><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: #FFDE5F; font-style: italic;">Пример 3:</b> <a style="color: #42C0C7;" href="../../img/p6/traktor.pas.txt class="im2"">Код программы</a>.<br><br><br>
+
+                <div class="line l1"></div><br>
+                <b style="color: #FFDE5F;">Задачи для самостоятельного решения:</b><br>
+                Составьте программы и выполните их в системе программирования Pascal ABC:
+                <ol>
+                    <li>Раскрасьте трактор. Для этого нужно использовать функцию <b>floodfill</b>(х,y,c).<br></li>
+                    <li>Нарисуйте рисунок, используя только окружности.<br></li>
+                    <li>Нарисуйте рисунок используя любые функции, которые вам известны.<br></li>
+                </ol>
+            </span>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="project5.html" style="color: #42C0C7;">Предыдущая тема</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="project7.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2022 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

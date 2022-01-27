@@ -1,0 +1,52 @@
+Program Ricynki;
+  uses graphABC;
+begin
+  setwindowsize(640,480);
+  setwindowtitle('Picture');
+  setbrushcolor(clgreen);
+  rectangle(0,350,640,480);
+  setbrushcolor(clbrown);
+  rectangle(70,275,215,415);
+  line(150,180,70,275);
+  line(70,275,215,275);
+  line(215,275,150,180);
+  floodfill(150,250,clbrown);   		 {заливка, точка, цвет}
+  circle(150,250,18);
+  setbrushcolor(clblue); 		{цвет фона}
+  setbrushstyle(bsfdiagonal);		{стиль фона}
+  floodfill(150,250,clblue);		{заливка, голубым цветом}
+  setbrushcolor(clblue);
+  setbrushstyle(bscross);
+  rectangle(75,315,120,375);
+  setbrushstyle(bsfdiagonal);
+  setbrushcolor(clsilver);
+  rectangle(150,315,200,415);
+  setpencolor(clyellow);
+  setbrushcolor(clyellow);
+  line(25,25,150,75);
+  line(25,25,145,80);
+  line(25,25,140,85);
+  line(25,25,130,95);
+  line(25,25,125,100);
+  line(25,25,115,110);
+  line(25,25,110,115);
+  line(25,25,100,125);
+  line(25,25,95,130);
+  line(25,25,85,135);
+  line(25,25,80,140);
+  line(25,25,75,145);
+  setbrushstyle(bssolid);
+  circle(25,25,30);
+  setbrushcolor(clbrown);
+  setpencolor(clbrown);
+  rectangle(307,425,317,400);
+  setbrushcolor(cllime);
+  setpencolor(clblack);
+  ellipse(250,150,375,400);  {эллипс, вписывается в прямоугольник, координаты диагонали }
+  setbrushcolor(clDkGray);
+  setpencolor(clblack);
+  rectangle(450,400,465,375);
+  rectangle(500,400,515,375);
+  setbrushcolor(clDkGray);
+  rectangle(425,375,540,365);
+end.
