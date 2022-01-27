@@ -147,12 +147,14 @@ body {background: #567B96;}
     }
 }
 
-@media (max-width: 839.98px) {
-    .b1 {margin-left: 11px;}
+@media (max-width: 849.98px) {
+    .b1 {margin-left: 10px;}
 
     .b2,
     .b4,
     .b5 {margin: 0px 4px;}
+    
+    .b6 {margin: 0px 5px;}
 }
 
 @media (max-width: 787.98px) {
