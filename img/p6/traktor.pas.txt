@@ -2,7 +2,7 @@ program traktor;
   uses graphabc;
 begin
   setwindowsize (400,300);
-  setwindowtitle ('Бульдозер');
+  setwindowtitle ('Р‘СѓР»СЊРґРѕР·РµСЂ');
   setpencolor (clgreen);
   setpenwidth (4);
   rectangle(40,150,300,200);
@@ -29,5 +29,5 @@ line(290,200,300,210);
 
   setfontcolor(clred);
   setfontstyle(fsbold);
-  textout (20,20,'В городе тaкой трактор встретить мало вероятно.');
+  textout (20,20,'Р’ РіРѕСЂРѕРґРµ С‚aРєРѕР№ С‚СЂР°РєС‚РѕСЂ РІСЃС‚СЂРµС‚РёС‚СЊ РјР°Р»Рѕ РІРµСЂРѕСЏС‚РЅРѕ.');
 end.

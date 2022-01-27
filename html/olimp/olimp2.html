@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/olimp/olimp15.css">
+    <title>Задание: Трамвайные билеты | pascalbook</title>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="../index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="../themes/theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="../tests/tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="../projects/projects.html">Творческие проекты</a></li>
+				    <li><a class="nav-item i5" href="../olimp/olimp.html">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="../erorr.html">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="../index.html" class="shine-button b1">Главная</a>
+        <a href="../themes/theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="../tests/tests.html" class="shine-button b3">Тесты</a>
+        <a href="../projects/projects.html" class="shine-button b4">Творческие проекты</a>
+        <a href="../olimp/olimp.html" class="shine-button b5">Олимпиадные задания</a>
+        <a href="../erorr.html" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Задание: Трамвайные билеты</span><br>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                Написать программу определения количества шестизначных "счастливых" трамвайных билетов, у которых сумма первых трех цифр совпадает с суммой трех последних.<br>
+                Оптимизировать решение по времени выполнения. Количество билетов вывести в файл <n style="font-style: italic;">output.txt</n>.<br><br>
+
+                <b style="color: #FFDE5F;">Решение:</b><br>
+                Логично устроить цикл в цикле, затем считать сумму первых и последних трех цифр и сравнивать их между собой.
+                Как считать сумму цифр?
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>for&nbsp;</b><w>Spec:=1&nbsp;</w><b>&nbsp;to&nbsp;</b><w>3</w><b>&nbsp;do&nbsp;begin</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;K+=Luck</w><b>&nbsp;mod&nbsp;</b><w>10;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>3.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;Luck:=Luck</w><b>&nbsp;div&nbsp;</b><w>10;</w></td>
+                        </tr>
+                        <tr>
+                            <td><w>4.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>end</b><w>.</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                где Luck - число, в котором надо посчитать сумму цифр, K - сумма цифр (более правильная реализация с циклом while, но это я предоставлю реализовать вам ;).<br><br>
+                Итак, у нас два цикла, в которых перебираются 1000 чисел, итого 1000000 итераций, т.е. мы перебираем все возможные билеты, но делаем это не очень явно.<br><br>
+                Попробуем разогнать программу в 1000 раз :). В этом нам поможет динамическое программирование, т.е. сохранение уже полученных однажды результатов.<br><br>
+                Рассмотрим трехзначное число. Сумма цифр этого числа может принимать значения от 0 до 27, т.е. мы можем просто посчитать сколько чисел от 0 до 999 с данной суммой цифр и записать это значение в массив от 0 до 27.<br><br>
+                Т. к. второе число также трехзначное, то мы можем пользоваться для него тем же массивом данных. Тогда, после подсчета кол-ва чисел с данной суммой цифр, мы можем достаточно просто подсчитать количество "счастливых билетов":<br><br>
+
+                <div class="code">
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><w>1.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><b>for&nbsp;</b><w>I:=0&nbsp;</w><b>&nbsp;to&nbsp;</b><w>27</w><b>&nbsp;do</b></td>
+                        </tr>
+                        <tr>
+                            <td><w>2.&nbsp;&nbsp;&nbsp;</w></td>
+                            <td><w>&nbsp;&nbsp;&nbsp;L:=L+M[I]*M[I];</w></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br>
+
+                где I - счетчик, L - кол-во счастливых билетов, M - массив значений суммы цифр.<br><br>
+                Удачи вам в реализации!
+            </span>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="olimp1.html" style="color: #42C0C7;">Предыдущая тема</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="olimp3.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2022 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

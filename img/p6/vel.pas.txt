@@ -2,7 +2,7 @@ program velik;
   uses graphabc;
 begin
   setwindowsize (640,480);
-  setwindowtitle ('Велосипед');
+  setwindowtitle ('Р’РµР»РѕСЃРёРїРµРґ');
   setpencolor (clblack);
   setpenwidth (4);
   circle(200,150,30);
@@ -31,5 +31,5 @@ line(265,130,275,130);
 
   setfontcolor(clred);
   setfontstyle(fsbold);
-  textout (20,20,'А у тебя есть свой транспорт?');
+  textout (20,20,'Рђ Сѓ С‚РµР±СЏ РµСЃС‚СЊ СЃРІРѕР№ С‚СЂР°РЅСЃРїРѕСЂС‚?');
 end.

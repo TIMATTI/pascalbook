@@ -2,7 +2,7 @@ program budik;
   uses graphabc;
 begin
   setwindowsize (640,480);
-  setwindowtitle ('Будильник');
+  setwindowtitle ('Р‘СѓРґРёР»СЊРЅРёРє');
   setpencolor (clgreen);
   setpenwidth (4);
   circle(250,180,60);
@@ -19,5 +19,5 @@ begin
     circle(310,180,5);
   setfontcolor(clblue);
   setfontstyle(fsbold);
-  textout (20,20,'Мой будильник!');
+  textout (20,20,'РњРѕР№ Р±СѓРґРёР»СЊРЅРёРє!');
 end.

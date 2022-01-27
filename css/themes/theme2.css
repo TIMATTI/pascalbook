@@ -37,17 +37,25 @@
         font-family: 'Comic Sans MS';
         color: #fff;
     }
+
+    .im1 {width: 95%;}
 }
 
 @media (max-width: 787.98px) {
-    .im1,
-    .im6 {width: 100%;}
+    .im7,
+    .im8 {width: 98%;}
 }
 
 @media (max-width: 695.98px) {
     .s1 {font-size: 25px;}
 
     .s2 {font-size: 16px;}
+
+    .im2,
+    .im3,
+    .im4,
+    .im5,
+    .im6 {width: 95%;}
 }
 
 @media (max-width: 505.98px) {

@@ -2,7 +2,7 @@ program ruchka;
   uses graphabc;
 begin
   setwindowsize (640,480);
-  setwindowtitle ('Ручка');
+  setwindowtitle ('Р СѓС‡РєР°');
   setpencolor (clbrown);
   setpenwidth (2);
   line(180,50,180,220);
@@ -20,5 +20,5 @@ begin
   line(180,50,210,50);
   setfontcolor(clteal);
   setfontstyle(fsbold);
-  textout (20,20,'Моя ручка!');
+  textout (20,20,'РњРѕСЏ СЂСѓС‡РєР°!');
 end.

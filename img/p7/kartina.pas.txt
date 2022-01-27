@@ -10,11 +10,11 @@ begin
   line(150,180,70,275);
   line(70,275,215,275);
   line(215,275,150,180);
-  floodfill(150,250,clbrown);   		 {заливка, точка, цвет}
+  floodfill(150,250,clbrown);           {Р·Р°Р»РёРІРєР°, С‚РѕС‡РєР°, С†РІРµС‚}
   circle(150,250,18);
-  setbrushcolor(clblue); 		{цвет фона}
-  setbrushstyle(bsfdiagonal);		{стиль фона}
-  floodfill(150,250,clblue);		{заливка, голубым цветом}
+  setbrushcolor(clblue); 		{С†РІРµС‚ С„РѕРЅР°}
+  setbrushstyle(bsfdiagonal);		{СЃС‚РёР»СЊ С„РѕРЅР°}
+  floodfill(150,250,clblue);		{Р·Р°Р»РёРІРєР°, РіРѕР»СѓР±С‹Рј С†РІРµС‚РѕРј}
   setbrushcolor(clblue);
   setbrushstyle(bscross);
   rectangle(75,315,120,375);
@@ -42,7 +42,7 @@ begin
   rectangle(307,425,317,400);
   setbrushcolor(cllime);
   setpencolor(clblack);
-  ellipse(250,150,375,400);  {эллипс, вписывается в прямоугольник, координаты диагонали }
+  ellipse(250,150,375,400);             {СЌР»Р»РёРїСЃ, РІРїРёСЃС‹РІР°РµС‚СЃСЏ РІ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє, РєРѕРѕСЂРґРёРЅР°С‚С‹ РґРёР°РіРѕРЅР°Р»Рё }
   setbrushcolor(clDkGray);
   setpencolor(clblack);
   rectangle(450,400,465,375);

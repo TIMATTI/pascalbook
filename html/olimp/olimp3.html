@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/themes/theme2.css">
-    <title>Тема: Окно программы | pascalbook</title>
+    <link rel="stylesheet" href="../../css/olimp/olimp15.css">
+    <title>Задание: Шифр Цезаря | pascalbook</title>
 </head>
 <body>
     <div class="container">
@@ -43,53 +43,32 @@
     </div>
     <div class="cent-container mt-0 mb-0">
         <div class="content">
-            <span class="s1">Тема: Окно программы</span><br>
+            <span class="s1">Задание: Шифр Цезаря</span><br>
             <div class="line l1"></div><br>
-            <span class="s2">При запуске программы Pascal ABC на рабочем столе компьютера вы увидите окно рис. 1. Здесь вы можете ввести текст алгоритма, сохранить его или загрузить (открыть) новый алгоритм.</span><br><br>
-            <img class="image im1" src="../../img/th2/0.jpg" alt=""><br>
-            <span class="s3">Рис. 1</span><br><br>
-            <div class="line l1"></div><br><br>
+            <span class="s2">
+                Написать программу, реализующую сдвиг по ключу(ключ задается) только для больших русских букв(буква Ё не используется).<br><br>
 
-            <span class="s2">Меню <b>Файл</b> напоминает меню других программ:</span><br><br>
-            <img class="image im2" src="../../img/th2/1.jpg" alt=""><br>
-            <span class="s3">Рис. 2</span><br><br>
-            <div class="line l1"></div><br><br>
+                <b style="font-style: italic;">Входные данные</b>:<br>
+                АБЯ - строка, 2 - ключ.<br>
+                <b style="font-style: italic;">Выходные данные</b>:<br>
+                ВГБ<br><br>
 
-            <span class="s2">Меню <b>Правка</b>:</span><br><br>
-            <img class="image im3" src="../../img/th2/2.jpg" alt=""><br>
-            <span class="s3">Рис. 3</span><br><br>
-            <div class="line l1"></div><br><br>
+                <b style="color: #FFDE5F;">Решение:</b><br>
+                Здесь стоит создать строку длиной 32 символа и заполнить ее русским алфавитом (его можно извлечь из ASCI-таблицы).<br><br>
+                
+                Допустим, мы считали одну букву. Осуществим поиск этой буквы в строке. Если буква не найдена (т.е. это не большая русская буква), то выводим ее. Если же буква найдена, то к ее позиции прибавляем значения ключа.<br><br>
+                
+                От числа получаем остаток от деления на 32 (сдвиг циклический) и выводим букву, соответствующую новой позиции.<br><br>
 
-            <span class="s2">Меню <b>Вид</b>:</span><br><br>
-            <img class="image im4" src="https://static.wixstatic.com/media/861550_b870653065d6442db12b641b2d403af3~mv2.jpg/v1/fill/w_417,h_368,al_c,q_80/okno4_JPG.webp" alt=""><br>
-            <span class="s3">Рис. 4</span><br><br>
-            <div class="line l1"></div><br><br>
-
-            <span class="s2">Меню <b>Программа</b>:</span><br><br>
-            <img class="image im5" src="../../img/th2/4.jpg" alt=""><br>
-            <span class="s3">Рис. 5</span><br><br>
-            <div class="line l1"></div><br><br>
-
-            <span class="s2">Меню <b>Сервис</b>:</span><br><br>
-            <img class="image im6" src="../../img/th2/5.jpg" alt=""><br>
-            <span class="s3">Рис. 6</span><br><br>
-            <div class="line l1"></div><br><br>
-
-            <span class="s2">Меню <b>Модули</b>:</span><br><br>
-            <img class="image im7" src="../../img/th2/6.jpg" alt=""><br>
-            <span class="s3">Рис. 7</span><br><br>
-            <div class="line l1"></div><br><br>
-
-            <span class="s2">Меню <b>Помощь</b>:</span><br><br>
-            <img class="image im8" src="../../img/th2/7.jpg" alt=""><br>
-            <span class="s3">Рис. 8</span>
+                Удачи вам в реализации!
+            </span>
         </div>
     </div>
     <div class="cent-cont mt-0 mb-0">
         <div class="content2">
             <div class="line"></div>
-            <span class="left" style="color: #42C0C7;">←<a href="theme1.html" style="color: #42C0C7;">Предыдущая тема</a></span>
-            <span class="right" style="color: #42C0C7;"><a href="theme3.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+            <span class="left" style="color: #42C0C7;">←<a href="olimp2.html" style="color: #42C0C7;">Предыдущая тема</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="olimp4.html" style="color: #42C0C7;">Следующая тема</a>→</span>
         </div>
     </div>
     <div class="bot-container mt-3 mb-4">

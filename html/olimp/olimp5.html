@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/olimp/olimp15.css">
+    <title>Задание: "Мы вас упакуем!" | pascalbook</title>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="op"></input>
+        <div class="lower">
+            <label for="op"></label>
+        </div>
+        <div class="menu-mobile">
+            <span></span>
+        </div>
+        <div class="overlay overlay-hugeinc">
+		    <label for="op"></label>
+		    <nav class="nav">
+			    <ul>
+				    <li><a class="nav-item i1" href="../index.html">Главная</a></li>
+				    <li><a class="nav-item i2" href="../themes/theme.html">Темы уроков</a></li>
+				    <li><a class="nav-item i3" href="../tests/tests.html">Тесты</a></li>
+				    <li><a class="nav-item i4" href="../projects/projects.html">Творческие проекты</a></li>
+				    <li><a class="nav-item i5" href="../olimp/olimp.html">Олимпиадные задания</a></li>
+                    <li><a class="nav-item i6" href="../erorr.html">Занятия</a></li>
+			    </ul>
+		    </nav>
+        </div>
+    </div>
+    <div class="top-container mb-4">
+        <a href="../index.html" class="shine-button b1">Главная</a>
+        <a href="../themes/theme.html" class="shine-button b2">Темы уроков</a>
+        <a href="../tests/tests.html" class="shine-button b3">Тесты</a>
+        <a href="../projects/projects.html" class="shine-button b4">Творческие проекты</a>
+        <a href="../olimp/olimp.html" class="shine-button b5">Олимпиадные задания</a>
+        <a href="../erorr.html" class="shine-button b6">Занятия</a>
+        <img class="fox" src="https://static.wixstatic.com/media/861550_16230d73bc0f4d94bb35b4108c0e7264~mv2.png/v1/fill/w_158,h_220,al_c,q_85,usm_0.66_1.00_0.01/2222-ts1605901350.webp">
+        <div class="name-site">WiseFox</div>
+    </div>
+    <div class="cent-container mt-0 mb-0">
+        <div class="content">
+            <span class="s1">Задание: "Мы вас упакуем!"</span><br>
+            <div class="line l1"></div><br>
+            <span class="s2">
+                Михаил Густокашин...<br><br>
+
+                В Тольятти началась новая грандиозная рекламная акция "Мы вас упакуем!" компании g6, производящей пластиковые пакеты. В ходе акции проводится массовая бесплатная раздача новой модели пластикового пакета от g6 - GEXANIUM, выдерживающего нагрузку до 150кг, рекламу на транспорте, в радио и теле эфире, с помощью сети интернет. Но не это самое главное, а самое главное это скидки на совершенно новый пакет с подогревом, mp3-плейером, картой flash-памяти на 128 мб., голосовым управлением и прочими наворотами, который называется xMSG666. К сожалению, этот пакет не предназначен для бесплатной раздачи, но g6 объявило о серьезном снижении цен на этот пакет. Здесь компания применила хитрый маркетинговый шаг. Например:<br><br>
+
+                Пусть раньше пакет стоил 100$ (компания объявила, что независимо от инфляции цена не будет больше 255$, но и бесплатно раздаваться не будет). После скидки пакет стал стоить 50$. По идее компания должна была написать "Новый xMSG666 со скидкой 50%!", вместо этого компания стала писать "Новый xMSG666 со скидкой 100%!". То есть компания стала отнимать от старой цены новую и делить на новую цену, чтобы посчитать скидку, хотя на самом деле надо отнимать от старой цены новую, и делить на старую. По такому случаю в компании был проведен банкет. Там произошла одна интересная история: пожарник - Дядя Вася - выпил немного лишнего и по ошибке вместо туалета забрел в кабинет директора, ну и, естественно, воспользовался этим помещением как туалетом. Вот смеху то было.<br><br>
+
+                Конкурент фирмы g6, компания Цуцик кучерявый (занимается производством холщовых мешков и сеток, заметила "ошибку" менеджеров g6, и подала на "пластикового монстра g6" в суд (ходят слухи, что разгадать такую хитрую комбинацию простому смертному не по силом, а значит налицо промышленный шпионаж - тут волей-неволей задумаешься о Дяде Васе).<br><br>
+                
+                Суд принял решение - если разница в правильном и неправильном подсчете скидки менее 5%, то компания g6 может продолжить продажи, иначе - компания будет оштрафована на сумму в 10000000$. Однако, вскоре планка была снижена до 10%. Сейчас в Тольятти существует много слухов на эту тему, которые, чтобы не утомлять читателя не будут приводиться в этом кратком обзоре.<br><br>
+
+                Ваша задача определить судьбу компании.<br><br>
+
+                <b style="font-style: italic;">Входные данные</b>:<br>
+                В первой строке содержится начальная цена пакета, во второй - цена со скидкой.<br><br>
+                
+                <b style="font-style: italic;">Выходные данные</b>:<br>
+                Следует вывести слово YES, если разница в подсчете скидок не более 10% (т.е. если от конечной скидки отнять начальную получится число меньше либо равное 10), и слово NO, если разница больше 10%.<br><br>
+
+                <b>Пример 1</b>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Входной файл <n style="font-style: italic;">input.txt</n>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>100</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>99</b><br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;Выходной файл <n style="font-style: italic;">output.txt</n>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>YES</b><br><br>
+
+
+                <b>Пример 2</b>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Входной файл <n style="font-style: italic;">input.txt</n>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>250</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>50</b><br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;Выходной файл <n style="font-style: italic;">output.txt</n>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>NO</b><br><br>
+
+                <b style="color: #FFDE5F;">Решение:</b><br>
+                Да уж... При составлении этой задачи мной преследовалась цель научить желающих заниматься решением олимпиадных задач отсеву, мягко говоря, "словесного поноса" в условии.<br><br>
+
+                Переформулируем задачу. Дано два числа a и b. Найдем, какую часть составляет (a - b) от а и от b, обозначим части за c1 и c2. Если (c1 - c2) > 0.1 тогда выводим NO, иначе YES.<br><br>
+
+                Вроде бы стало попроще. Мораль такая: дочитывайте задачи до конца.
+            </span>
+        </div>
+    </div>
+    <div class="cent-cont mt-0 mb-0">
+        <div class="content2">
+            <div class="line"></div>
+            <span class="left" style="color: #42C0C7;">←<a href="olimp3.html" style="color: #42C0C7;">Предыдущая тема</a></span>
+            <span class="right" style="color: #42C0C7;"><a href="olimp5.html" style="color: #42C0C7;">Следующая тема</a>→</span>
+        </div>
+    </div>
+    <div class="bot-container mt-3 mb-4">
+        <div class="content3">
+            <p class="cop">Copyright © 2022 «Школа №38 г. Гомеля, Образовательный портал <a style="color: #42C0C7;" href="http://wisefox.online/" target="_blank">wisefox.online</a>»</p>
+            <div class="network">
+            <a href="#" target="_blank"><img class="i1" src="https://static.wixstatic.com/media/34e3765f4f7e4544835057fcf9b8b8ea.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/34e3765f4f7e4544835057fcf9b8b8ea.webp"></a>
+            <a href="https://www.instagram.com/wisefoxonline/" target="_blank"><img class="i2" src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

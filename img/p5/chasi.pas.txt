@@ -2,7 +2,7 @@ program chasi;
   uses graphabc;
 begin
   setwindowsize (640,480);
-  setwindowtitle ('Часы');
+  setwindowtitle ('Р§Р°СЃС‹');
   setpencolor (clbrown);
   setpenwidth (2);
   line(100,50,80,100);
@@ -36,5 +36,5 @@ lineto(90,100);
   line(165,125,165,135);
   setfontcolor(clblue);
   setfontstyle(fsbold);
-  textout (20,20,'Мои электронные часы!');
+  textout (20,20,'РњРѕРё СЌР»РµРєС‚СЂРѕРЅРЅС‹Рµ С‡Р°СЃС‹!');
 end.
