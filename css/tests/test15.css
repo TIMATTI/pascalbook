@@ -32,6 +32,12 @@
         font-size: 18px;
         font-family: "Arial";
     }
+
+    .mode {
+        margin-top: -19px;
+        margin-left: 20px;
+    }
+    
     
     blockquote {
         padding-left: 5%;
@@ -42,13 +48,9 @@
     
     p {text-align: center;}
 
-    input {
-        background-color: #fff;
-    }
+    input {background-color: #fff;}
     
-    input:hover {
-        background-color: #FFDE5F;
-    }
+    input:hover {background-color: #FFDE5F;}
     
     .but {
         height: 30px;
@@ -56,9 +58,7 @@
         border-radius: 15px;
     }
 
-    .send:hover {
-        background-color: #FFDE5F;
-    }
+    .send:hover {background-color: #FFDE5F;}
 
     .send {
         margin-left: 50%;
@@ -77,9 +77,7 @@
     }
 
     .image,
-    .imag {
-        background: #fff;
-    }
+    .imag {background: #fff;}
 
     .num {
         height: 25px;

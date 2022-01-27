@@ -39,12 +39,14 @@ body {background: #567B96;}
 
     .b1 {
         margin: 20px 0px;
-        margin-left: 35px;
+        margin-left: 55px;
+        margin-right: 20px;
     }
 
     .b2,
+    .b3,
     .b4,
-    .b6 {margin: 0px 20px;}
+    .b5 {margin: 0px 20px;}
 
     .shine-button:hover {
         background: #FFDE5F;
@@ -89,11 +91,12 @@ body {background: #567B96;}
 
     .shine-button {padding: 4px 15px;}
 
-    .b1 {margin-left: 28px;}
+    .b1 {margin-left: 50px;}
 
     .b2,
+    .b3,
     .b4,
-    .b6 {margin: 0px 15px;}
+    .b5 {margin: 0px 15px;}
 
     .name-site {
         width: 528px;
@@ -109,11 +112,12 @@ body {background: #567B96;}
 
     .shine-button {padding: 3px 10px;}
 
-    .b1 {margin-left: 20px;}
+    .b1 {margin-left: 40px;}
 
     .b2,
+    .b3,
     .b4,
-    .b6 {margin: 0px 10px;}
+    .b5 {margin: 0px 10px;}
 
     .name-site {
         width: 428px;
@@ -133,11 +137,15 @@ body {background: #567B96;}
         font-size: 14px;
     }
 
-    .b1 {margin-left: 13px;}
+    .b1 {
+        margin-left: 25px;
+        margin-right: 6px;
+    }
 
     .b2,
+    .b3,
     .b4,
-    .b6 {margin: 0px 5px;}
+    .b5 {margin: 0px 10px;}
 
     .fox {margin-left: 75px;}
 
@@ -145,16 +153,6 @@ body {background: #567B96;}
         width: 390px;
         margin-left: 310px;
     }
-}
-
-@media (max-width: 849.98px) {
-    .b1 {margin-left: 10px;}
-
-    .b2,
-    .b4,
-    .b5 {margin: 0px 4px;}
-    
-    .b6 {margin: 0px 5px;}
 }
 
 @media (max-width: 787.98px) {
@@ -170,12 +168,14 @@ body {background: #567B96;}
 
     .b1 {
         margin: 15px 0px;
-        margin-left: 8px;
+        margin-left: 22px;
+        margin-right: 7px;
     }
 
     .b2,
+    .b3,
     .b4,
-    .b6 {margin: 0px 4px;}
+    .b5 {margin: 0px 7px;}
 
     .fox {
         margin-top: -20px;
